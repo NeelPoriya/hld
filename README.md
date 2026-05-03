@@ -36,25 +36,25 @@ Every technology page follows the [TEMPLATE](TEMPLATE.md):
 
 ### 1. Relational Databases (RDBMS / SQL)
 - [PostgreSQL](01-relational-databases/postgresql.md)
-- MySQL *(coming soon)*
-- Amazon Aurora *(coming soon)*
-- Google Cloud Spanner *(coming soon)*
-- CockroachDB *(coming soon)*
+- [MySQL](01-relational-databases/mysql.md)
+- [Amazon Aurora](01-relational-databases/aurora.md)
+- [Google Cloud Spanner](01-relational-databases/spanner.md)
+- [CockroachDB](01-relational-databases/cockroachdb.md)
 
 ### 2. NoSQL — Key-Value Stores
 - [Redis](02-key-value-stores/redis.md)
 - [Amazon DynamoDB](02-key-value-stores/dynamodb.md)
-- Memcached *(coming soon)*
-- etcd *(coming soon)*
+- [Memcached](02-key-value-stores/memcached.md)
+- [etcd](02-key-value-stores/etcd.md)
 
 ### 3. NoSQL — Wide-Column Stores
 - [Apache Cassandra](03-wide-column-stores/cassandra.md)
-- Apache HBase *(coming soon)*
-- Google Bigtable *(coming soon)*
-- ScyllaDB *(coming soon)*
+- [Apache HBase](03-wide-column-stores/hbase.md)
+- [Google Bigtable](03-wide-column-stores/bigtable.md)
+- [ScyllaDB](03-wide-column-stores/scylladb.md)
 
 ### 4. NoSQL — Document Stores
-- MongoDB *(coming soon)*
+- [MongoDB](04-document-stores/mongodb.md)
 - Couchbase *(coming soon)*
 
 ### 5. NoSQL — Graph Databases
