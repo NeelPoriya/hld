@@ -1,6 +1,8 @@
 {
   "title": "Search & Indexing",
   "pages": [
-    "elasticsearch"
+    "elasticsearch",
+    "solr",
+    "opensearch"
   ]
 }

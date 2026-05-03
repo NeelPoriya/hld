@@ -19,8 +19,11 @@ const categories = [
   { name: 'Relational (SQL)', techs: 'PostgreSQL, MySQL, Aurora, Spanner, CockroachDB', href: '/docs/01-relational-databases/postgresql' },
   { name: 'Key-Value', techs: 'Redis, DynamoDB, Memcached, etcd', href: '/docs/02-key-value-stores/redis' },
   { name: 'Wide-Column', techs: 'Cassandra, HBase, Bigtable, ScyllaDB', href: '/docs/03-wide-column-stores/cassandra' },
-  { name: 'Document', techs: 'MongoDB', href: '/docs/04-document-stores/mongodb' },
-  { name: 'Search & Indexing', techs: 'ElasticSearch', href: '/docs/06-search-and-indexing/elasticsearch' },
+  { name: 'Document', techs: 'MongoDB, Couchbase', href: '/docs/04-document-stores/mongodb' },
+  { name: 'Graph Databases', techs: 'Neo4j, Neptune', href: '/docs/05-graph-databases/neo4j' },
+  { name: 'Search & Indexing', techs: 'ElasticSearch, Solr, OpenSearch', href: '/docs/06-search-and-indexing/elasticsearch' },
+  { name: 'Time-Series', techs: 'InfluxDB, TimescaleDB, Prometheus', href: '/docs/07-time-series-databases/prometheus' },
+  { name: 'Vector Databases', techs: 'Pinecone, Milvus, Weaviate', href: '/docs/08-vector-databases/pinecone' },
   { name: 'Streaming & Queues', techs: 'Kafka', href: '/docs/09-message-queues-and-streaming/kafka' },
   { name: 'Stream Processing', techs: 'Flink', href: '/docs/10-stream-processing/flink' },
   { name: 'Batch & Big Data', techs: 'Hadoop, Spark', href: '/docs/11-batch-big-data/spark' },
@@ -40,7 +43,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          21 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          32 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

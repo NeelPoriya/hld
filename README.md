@@ -54,19 +54,26 @@ All docs live under [content/docs/](content/docs/).
 
 ### 4. NoSQL — Document Stores
 - [MongoDB](content/docs/04-document-stores/mongodb.md)
-- Couchbase *(coming soon)*
+- [Couchbase](content/docs/04-document-stores/couchbase.md)
 
 ### 5. NoSQL — Graph Databases
-- Neo4j *(coming soon)*
-- Amazon Neptune *(coming soon)*
+- [Neo4j](content/docs/05-graph-databases/neo4j.md)
+- [Amazon Neptune](content/docs/05-graph-databases/neptune.md)
 
 ### 6. Search & Indexing
 - [ElasticSearch](content/docs/06-search-and-indexing/elasticsearch.md)
-- Apache Solr *(coming soon)*
-- OpenSearch *(coming soon)*
+- [Apache Solr](content/docs/06-search-and-indexing/solr.md)
+- [OpenSearch](content/docs/06-search-and-indexing/opensearch.md)
 
-### 7. Time-Series Databases — *coming soon*
-### 8. Vector Databases (AI/ML) — *coming soon*
+### 7. Time-Series Databases
+- [InfluxDB](content/docs/07-time-series-databases/influxdb.md)
+- [TimescaleDB](content/docs/07-time-series-databases/timescaledb.md)
+- [Prometheus](content/docs/07-time-series-databases/prometheus.md)
+
+### 8. Vector Databases (AI / ML)
+- [Pinecone](content/docs/08-vector-databases/pinecone.md)
+- [Milvus](content/docs/08-vector-databases/milvus.md)
+- [Weaviate](content/docs/08-vector-databases/weaviate.md)
 
 ### 9. Message Queues & Streaming Platforms
 - [Apache Kafka](content/docs/09-message-queues-and-streaming/kafka.md)
@@ -111,6 +118,10 @@ All docs live under [content/docs/](content/docs/).
 | Distributed coordination / leader election | Zookeeper / etcd | Consensus primitives ready |
 | Global SQL with strong consistency | Spanner / CockroachDB | Distributed ACID at scale |
 | Document-shaped data with flexible schema | MongoDB | Native JSON document model |
+| Highly connected / relationship-heavy data | Neo4j | Native graph storage + Cypher traversals |
+| App / infra metrics on Kubernetes | Prometheus | Pull-based scraping, PromQL, K8s-native |
+| Mixed time-series + relational workload | TimescaleDB | Postgres + auto-partitioning + compression |
+| RAG / semantic search over embeddings | Pinecone / Milvus / Weaviate | Vector similarity at scale |
 
 ---
 

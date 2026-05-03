@@ -1,6 +1,7 @@
 {
   "title": "Document Stores",
   "pages": [
-    "mongodb"
+    "mongodb",
+    "couchbase"
   ]
 }

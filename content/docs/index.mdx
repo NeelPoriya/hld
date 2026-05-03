@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -28,8 +28,11 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<Database />} title="Relational (SQL)" href="/docs/01-relational-databases/postgresql" description="PostgreSQL, MySQL, Aurora, Spanner, CockroachDB" />
   <Card icon={<Zap />} title="Key-Value" href="/docs/02-key-value-stores/redis" description="Redis, DynamoDB, Memcached, etcd" />
   <Card icon={<Layers />} title="Wide-Column" href="/docs/03-wide-column-stores/cassandra" description="Cassandra, HBase, Bigtable, ScyllaDB" />
-  <Card icon={<Database />} title="Document" href="/docs/04-document-stores/mongodb" description="MongoDB" />
-  <Card icon={<Search />} title="Search & Indexing" href="/docs/06-search-and-indexing/elasticsearch" description="ElasticSearch" />
+  <Card icon={<Database />} title="Document" href="/docs/04-document-stores/mongodb" description="MongoDB, Couchbase" />
+  <Card icon={<Network />} title="Graph Databases" href="/docs/05-graph-databases/neo4j" description="Neo4j, Neptune" />
+  <Card icon={<Search />} title="Search & Indexing" href="/docs/06-search-and-indexing/elasticsearch" description="ElasticSearch, Solr, OpenSearch" />
+  <Card icon={<Activity />} title="Time-Series" href="/docs/07-time-series-databases/prometheus" description="InfluxDB, TimescaleDB, Prometheus" />
+  <Card icon={<Brain />} title="Vector Databases" href="/docs/08-vector-databases/pinecone" description="Pinecone, Milvus, Weaviate" />
   <Card icon={<GitBranch />} title="Streaming & Queues" href="/docs/09-message-queues-and-streaming/kafka" description="Kafka" />
   <Card icon={<Workflow />} title="Stream Processing" href="/docs/10-stream-processing/flink" description="Flink" />
   <Card icon={<Cloud />} title="Batch & Big Data" href="/docs/11-batch-big-data/spark" description="Hadoop, Spark" />
@@ -72,6 +75,10 @@ Every technology page follows the same template:
 | Distributed coordination / leader election | Zookeeper / etcd | Consensus primitives ready |
 | Global SQL with strong consistency | Spanner / CockroachDB | Distributed ACID at scale |
 | Document-shaped data with flexible schema | MongoDB | Native JSON document model |
+| Highly connected / relationship-heavy data | Neo4j | Native graph storage + Cypher traversals |
+| App / infra metrics on Kubernetes | Prometheus | Pull-based scraping, PromQL, K8s-native |
+| Mixed time-series + relational workload | TimescaleDB | Postgres + auto-partitioning + compression |
+| RAG / semantic search over embeddings | Pinecone / Milvus / Weaviate | Vector similarity at scale |
 
 <Callout type="info">
 Built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org), deployed automatically to GitHub Pages on every push to `main`.

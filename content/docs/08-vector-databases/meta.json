@@ -1,0 +1,8 @@
+{
+  "title": "Vector Databases",
+  "pages": [
+    "pinecone",
+    "milvus",
+    "weaviate"
+  ]
+}
