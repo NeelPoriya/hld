@@ -1,0 +1,162 @@
+site_name: HLD Cheat Sheet
+site_description: A revision-friendly knowledge base of key technologies for High Level Design / System Design interviews.
+site_author: Neel Poriya
+site_url: https://neelporiya.github.io/hld/
+
+repo_name: NeelPoriya/hld
+repo_url: https://github.com/NeelPoriya/hld
+edit_uri: edit/main/
+
+# Source files live in docs/, with mkdocs.yml at the repo root
+docs_dir: docs
+site_dir: site
+
+# Files to exclude from the build (these stay in the repo, just not on the site)
+exclude_docs: |
+  TEMPLATE.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Auto switches based on system preference
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - glightbox
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/NeelPoriya
+  generator: false
+
+extra_css:
+  - assets/extra.css
+
+copyright: >
+  Built with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a> &mdash;
+  source on <a href="https://github.com/NeelPoriya/hld" target="_blank">GitHub</a>.
+
+nav:
+  - Home: index.md
+  - Relational (SQL):
+      - PostgreSQL: 01-relational-databases/postgresql.md
+      - MySQL: 01-relational-databases/mysql.md
+      - Amazon Aurora: 01-relational-databases/aurora.md
+      - Google Cloud Spanner: 01-relational-databases/spanner.md
+      - CockroachDB: 01-relational-databases/cockroachdb.md
+  - Key-Value:
+      - Redis: 02-key-value-stores/redis.md
+      - DynamoDB: 02-key-value-stores/dynamodb.md
+      - Memcached: 02-key-value-stores/memcached.md
+      - etcd: 02-key-value-stores/etcd.md
+  - Wide-Column:
+      - Cassandra: 03-wide-column-stores/cassandra.md
+      - HBase: 03-wide-column-stores/hbase.md
+      - Bigtable: 03-wide-column-stores/bigtable.md
+      - ScyllaDB: 03-wide-column-stores/scylladb.md
+  - Document:
+      - MongoDB: 04-document-stores/mongodb.md
+  - Search:
+      - ElasticSearch: 06-search-and-indexing/elasticsearch.md
+  - Streaming & Queues:
+      - Kafka: 09-message-queues-and-streaming/kafka.md
+  - Stream Processing:
+      - Flink: 10-stream-processing/flink.md
+  - Batch & Big Data:
+      - Hadoop: 11-batch-big-data/hadoop.md
+      - Spark: 11-batch-big-data/spark.md
+  - Data Warehousing:
+      - Snowflake: 12-data-warehousing/snowflake.md
+  - Coordination:
+      - Zookeeper: 14-workflow-orchestration-and-coordination/zookeeper.md

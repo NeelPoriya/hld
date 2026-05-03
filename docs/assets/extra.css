@@ -1,0 +1,40 @@
+/* Make tables scroll horizontally on mobile */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Compact tables look nicer for cheat-sheet rows */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: 0.5em 0.85em;
+}
+
+/* Slightly tighter list spacing — easier to scan dense lists */
+.md-typeset li {
+  margin-bottom: 0.2em;
+}
+
+/* Code blocks: a hair more contrast in slate (dark) mode */
+[data-md-color-scheme="slate"] .md-typeset pre > code {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Inline code: subtle colour so cheat-sheet keys pop */
+.md-typeset :not(pre) > code {
+  font-size: 0.85em;
+}
+
+/* Pretty quote blocks (used in TL;DR and "rule of thumb" callouts) */
+.md-typeset blockquote {
+  border-left-width: 4px;
+  padding-left: 1em;
+}
+
+/* Center single images */
+.md-typeset img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
