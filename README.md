@@ -100,14 +100,43 @@ All docs live under [content/docs/](content/docs/).
 - [ClickHouse](content/docs/12-data-warehousing/clickhouse.md)
 - [Apache Druid](content/docs/12-data-warehousing/druid.md)
 
-### 13. Data Lake & Lakehouse — *coming soon*
+### 13. Data Lake & Lakehouse
+- [Apache Iceberg](content/docs/13-data-lake-and-lakehouse/iceberg.md)
+- [Delta Lake](content/docs/13-data-lake-and-lakehouse/delta-lake.md)
+- [Apache Hudi](content/docs/13-data-lake-and-lakehouse/hudi.md)
 
 ### 14. Workflow Orchestration & Coordination
 - [Apache Zookeeper](content/docs/14-workflow-orchestration-and-coordination/zookeeper.md)
 - [Apache Airflow](content/docs/14-workflow-orchestration-and-coordination/airflow.md)
 - [Temporal](content/docs/14-workflow-orchestration-and-coordination/temporal.md)
 
-### 15-30. *(more categories coming soon — caching, infra, observability, app-layer)*
+### 15. Object Storage
+- [Amazon S3](content/docs/15-object-storage/s3.md)
+- [Google Cloud Storage](content/docs/15-object-storage/gcs.md)
+- [MinIO](content/docs/15-object-storage/minio.md)
+
+### 16. Load Balancing & Proxies
+- [NGINX](content/docs/16-load-balancing-and-proxies/nginx.md)
+- [HAProxy](content/docs/16-load-balancing-and-proxies/haproxy.md)
+- [Envoy](content/docs/16-load-balancing-and-proxies/envoy.md)
+
+### 17. CDN & Edge
+- [Amazon CloudFront](content/docs/17-cdn-and-edge/cloudfront.md)
+- [Cloudflare](content/docs/17-cdn-and-edge/cloudflare.md)
+
+### 18. API Gateways
+- [Kong](content/docs/18-api-gateways/kong.md)
+- [AWS API Gateway](content/docs/18-api-gateways/aws-api-gateway.md)
+
+### 19. Container Orchestration
+- [Kubernetes](content/docs/19-container-orchestration/kubernetes.md)
+
+### 20. Observability
+- [Grafana](content/docs/20-observability/grafana.md)
+- [OpenTelemetry](content/docs/20-observability/opentelemetry.md)
+- [Jaeger](content/docs/20-observability/jaeger.md)
+
+### 21-30. *(more categories coming soon — caching layer, secrets/config, service mesh, app-layer)*
 
 ---
 
@@ -135,6 +164,17 @@ All docs live under [content/docs/](content/docs/).
 | Federated SQL across data lakes & DBs | Trino / Presto | Many connectors, one SQL gateway |
 | Long-running business workflows | Temporal | Durable execution as plain code |
 | Scheduled batch ETL pipelines | Airflow | Python DAGs + huge operator ecosystem |
+| Open table format on data lake | Iceberg / Delta / Hudi | ACID + time-travel + schema evolution on S3/HDFS |
+| Cheap durable cloud object storage | S3 / GCS / MinIO | HTTP-addressable, 11-9s durability, lake substrate |
+| Reverse proxy / TLS / static + L7 LB | NGINX | Default front door for app servers |
+| Service mesh / dynamic xDS L7 | Envoy | gRPC + mTLS + xDS for Istio-style meshes |
+| TCP / L4 + L7 with active health checks | HAProxy | Best-in-class throughput + stick tables |
+| Global CDN + DDoS + edge compute | CloudFront / Cloudflare | Cache near user; programmable edge |
+| Centralized API auth / rate limit / routing | Kong / AWS API Gateway | API gateway responsibilities in one tier |
+| Container orchestration at scale | Kubernetes | Declarative reconciling control plane |
+| Dashboards across metrics + logs + traces | Grafana | One pane of glass over Prometheus + Loki + Tempo |
+| Vendor-neutral instrumentation | OpenTelemetry | SDKs + Collector + OTLP for traces / metrics / logs |
+| Self-hosted distributed tracing | Jaeger | OSS span store + UI; OTLP-native |
 
 ---
 

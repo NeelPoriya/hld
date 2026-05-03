@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -37,7 +37,14 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<Workflow />} title="Stream Processing" href="/docs/10-stream-processing/flink" description="Flink, Kafka Streams, Spark Streaming" />
   <Card icon={<Cloud />} title="Batch & Big Data" href="/docs/11-batch-big-data/spark" description="Hadoop, Spark, Hive, Trino" />
   <Card icon={<BarChart3 />} title="Data Warehousing" href="/docs/12-data-warehousing/snowflake" description="Snowflake, Redshift, BigQuery, ClickHouse, Druid" />
+  <Card icon={<Layers />} title="Data Lake & Lakehouse" href="/docs/13-data-lake-and-lakehouse/iceberg" description="Iceberg, Delta Lake, Hudi" />
   <Card icon={<Workflow />} title="Coordination & Orchestration" href="/docs/14-workflow-orchestration-and-coordination/zookeeper" description="Zookeeper, Airflow, Temporal" />
+  <Card icon={<HardDrive />} title="Object Storage" href="/docs/15-object-storage/s3" description="S3, GCS, MinIO" />
+  <Card icon={<Network />} title="Load Balancing & Proxies" href="/docs/16-load-balancing-and-proxies/nginx" description="NGINX, HAProxy, Envoy" />
+  <Card icon={<Globe />} title="CDN & Edge" href="/docs/17-cdn-and-edge/cloudfront" description="CloudFront, Cloudflare" />
+  <Card icon={<KeyRound />} title="API Gateways" href="/docs/18-api-gateways/kong" description="Kong, AWS API Gateway" />
+  <Card icon={<Boxes />} title="Container Orchestration" href="/docs/19-container-orchestration/kubernetes" description="Kubernetes" />
+  <Card icon={<LineChart />} title="Observability" href="/docs/20-observability/grafana" description="Grafana, OpenTelemetry, Jaeger" />
 </Cards>
 
 ## Per-Page Structure
@@ -83,6 +90,17 @@ Every technology page follows the same template:
 | Federated SQL across data lakes & DBs | Trino / Presto | Many connectors, one SQL gateway |
 | Long-running business workflows | Temporal | Durable execution as plain code |
 | Scheduled batch ETL pipelines | Airflow | Python DAGs + huge operator ecosystem |
+| Open table format on data lake | Iceberg / Delta / Hudi | ACID + time-travel + schema evolution on S3/HDFS |
+| Cheap durable cloud object storage | S3 / GCS / MinIO | HTTP-addressable, 11-9s durability, lake substrate |
+| Reverse proxy / TLS / static + LB | NGINX | Default front door for app servers |
+| Service mesh / dynamic xDS L7 | Envoy | gRPC + mTLS + xDS for Istio-style meshes |
+| TCP / L4 + L7 with active health checks | HAProxy | Best-in-class throughput + stick tables |
+| Global CDN + DDoS + edge compute | CloudFront / Cloudflare | Cache near user; programmable edge |
+| Centralized API auth / rate limit / routing | Kong / AWS API Gateway | API gateway responsibilities in one tier |
+| Container orchestration at scale | Kubernetes | Declarative reconciling control plane |
+| Dashboards across metrics + logs + traces | Grafana | One pane of glass over Prometheus + Loki + Tempo |
+| Vendor-neutral instrumentation | OpenTelemetry | SDKs + Collector + OTLP for traces / metrics / logs |
+| Self-hosted distributed tracing | Jaeger | OSS span store + UI; OTLP-native |
 
 <Callout type="info">
 Built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org), deployed automatically to GitHub Pages on every push to `main`.

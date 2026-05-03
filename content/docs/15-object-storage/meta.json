@@ -1,0 +1,4 @@
+{
+  "title": "Object Storage",
+  "pages": ["s3", "gcs", "minio"]
+}
