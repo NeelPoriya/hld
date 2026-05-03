@@ -1,0 +1,280 @@
+{
+  "_comment": "Curated list of docs to include in the interview-prep PDF. Edit `parts` to add/remove docs. Each `docs` entry is a path under `content/docs/` without the `.md` extension. The script will preserve order and start each doc on a new page.",
+  "title": "HLD Interview Cheatsheet",
+  "subtitle": "A revision-friendly distillation of the technologies and concepts that show up in every High-Level Design interview.",
+  "author": "github.com/NeelPoriya/hld",
+  "compiler": "xelatex",
+  "parts": [
+    {
+      "title": "Part I --- Key Technologies",
+      "intro": "The technologies most commonly invoked when designing systems on a whiteboard. This is a curated subset --- the goal is not to memorize every database, but to have a strong opinion about the canonical pick in each category and a one-line awareness of the close alternatives.",
+      "chapters": [
+        {
+          "title": "Relational Databases",
+          "docs": ["01-relational-databases/postgresql"]
+        },
+        {
+          "title": "Key-Value Stores",
+          "docs": [
+            "02-key-value-stores/redis",
+            "02-key-value-stores/dynamodb"
+          ]
+        },
+        {
+          "title": "Wide-Column & Document Stores",
+          "docs": [
+            "03-wide-column-stores/cassandra",
+            "04-document-stores/mongodb"
+          ]
+        },
+        {
+          "title": "Search & Time-Series",
+          "docs": [
+            "06-search-and-indexing/elasticsearch",
+            "07-time-series-databases/prometheus"
+          ]
+        },
+        {
+          "title": "Vector Databases",
+          "docs": ["08-vector-databases/pinecone"]
+        },
+        {
+          "title": "Streaming & Stream Processing",
+          "docs": [
+            "09-message-queues-and-streaming/kafka",
+            "10-stream-processing/flink"
+          ]
+        },
+        {
+          "title": "Batch & Warehousing",
+          "docs": [
+            "11-batch-big-data/spark",
+            "12-data-warehousing/snowflake",
+            "12-data-warehousing/clickhouse",
+            "13-data-lake-and-lakehouse/iceberg"
+          ]
+        },
+        {
+          "title": "Coordination & Workflow",
+          "docs": [
+            "14-workflow-orchestration-and-coordination/zookeeper",
+            "14-workflow-orchestration-and-coordination/temporal"
+          ]
+        },
+        {
+          "title": "Object Storage",
+          "docs": ["15-object-storage/s3"]
+        },
+        {
+          "title": "Networking Infrastructure",
+          "docs": [
+            "16-load-balancing-and-proxies/nginx",
+            "16-load-balancing-and-proxies/envoy"
+          ]
+        },
+        {
+          "title": "Container Orchestration",
+          "docs": ["19-container-orchestration/kubernetes"]
+        },
+        {
+          "title": "Observability",
+          "docs": ["20-observability/grafana"]
+        },
+        {
+          "title": "Service Mesh",
+          "docs": ["22-service-mesh/istio"]
+        },
+        {
+          "title": "Serverless",
+          "docs": ["26-serverless-and-faas/aws-lambda"]
+        },
+        {
+          "title": "Change Data Capture",
+          "docs": ["27-cdc-and-data-integration/debezium"]
+        }
+      ]
+    },
+    {
+      "title": "Part II --- Key Concepts",
+      "intro": "The patterns and ideas every interviewer expects you to articulate clearly. Each entry covers what problem it solves, where to use it (with real examples), where NOT to use it, and what to consider.",
+      "chapters": [
+        {
+          "title": "Caching Patterns",
+          "docs": [
+            "41-caching/caching-strategies",
+            "41-caching/consistent-hashing"
+          ]
+        },
+        {
+          "title": "Data Distribution",
+          "docs": [
+            "42-data-distribution/sharding-and-partitioning",
+            "42-data-distribution/replication-strategies"
+          ]
+        },
+        {
+          "title": "Time & Ordering",
+          "docs": [
+            "43-time-and-ordering/clock-skew-and-ntp",
+            "43-time-and-ordering/logical-clocks"
+          ]
+        },
+        {
+          "title": "Delivery Semantics",
+          "docs": [
+            "44-delivery-semantics/delivery-guarantees",
+            "44-delivery-semantics/idempotency"
+          ]
+        },
+        {
+          "title": "Resilience Patterns",
+          "docs": [
+            "45-resilience-patterns/circuit-breaker",
+            "45-resilience-patterns/retry-and-backoff",
+            "45-resilience-patterns/backpressure",
+            "45-resilience-patterns/rate-limiting"
+          ]
+        },
+        {
+          "title": "Fan-out Patterns",
+          "docs": [
+            "46-fanout-patterns/fan-out-on-write",
+            "46-fanout-patterns/fan-out-on-read",
+            "46-fanout-patterns/hybrid-fanout"
+          ]
+        },
+        {
+          "title": "Event-Driven Architecture",
+          "docs": [
+            "47-event-driven-architecture/event-sourcing",
+            "47-event-driven-architecture/cqrs",
+            "47-event-driven-architecture/saga-pattern"
+          ]
+        },
+        {
+          "title": "Storage Internals",
+          "docs": [
+            "48-storage-internals/write-ahead-log",
+            "48-storage-internals/lsm-vs-btree"
+          ]
+        },
+        {
+          "title": "Probabilistic Data Structures",
+          "docs": [
+            "49-probabilistic-data-structures/bloom-filter",
+            "49-probabilistic-data-structures/hyperloglog-and-count-min"
+          ]
+        },
+        {
+          "title": "Network & Traffic Routing",
+          "docs": [
+            "50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway",
+            "50-network-traffic-routing/load-balancing-algorithms",
+            "50-network-traffic-routing/l4-vs-l7-load-balancing"
+          ]
+        },
+        {
+          "title": "Consistency & CAP",
+          "docs": [
+            "51-consistency-and-cap/cap-theorem-and-pacelc",
+            "51-consistency-and-cap/consistency-models",
+            "51-consistency-and-cap/acid-vs-base"
+          ]
+        },
+        {
+          "title": "Consensus & Coordination",
+          "docs": [
+            "52-consensus-and-coordination/paxos-and-raft",
+            "52-consensus-and-coordination/two-phase-commit",
+            "52-consensus-and-coordination/leader-election",
+            "52-consensus-and-coordination/distributed-locks"
+          ]
+        },
+        {
+          "title": "Transactions & Concurrency Control",
+          "docs": [
+            "53-transactions-and-concurrency/isolation-levels",
+            "53-transactions-and-concurrency/mvcc-and-locking",
+            "53-transactions-and-concurrency/optimistic-vs-pessimistic"
+          ]
+        },
+        {
+          "title": "API Design Patterns",
+          "docs": [
+            "54-api-design-patterns/rest-vs-graphql-vs-grpc",
+            "54-api-design-patterns/pagination-strategies",
+            "54-api-design-patterns/api-versioning"
+          ]
+        },
+        {
+          "title": "Security & Auth",
+          "docs": [
+            "55-security-and-auth/authentication-oauth-oidc-saml-jwt",
+            "55-security-and-auth/rbac-vs-abac",
+            "55-security-and-auth/encryption-and-key-management"
+          ]
+        },
+        {
+          "title": "Network Protocols & Real-time",
+          "docs": [
+            "56-network-protocols-and-realtime/tcp-vs-udp-and-http-versions",
+            "56-network-protocols-and-realtime/websocket-sse-long-polling",
+            "56-network-protocols-and-realtime/tls-and-mtls",
+            "56-network-protocols-and-realtime/dns-and-anycast"
+          ]
+        },
+        {
+          "title": "Observability & SRE",
+          "docs": [
+            "57-observability-and-sre/sli-slo-sla-error-budgets",
+            "57-observability-and-sre/metrics-logs-traces"
+          ]
+        },
+        {
+          "title": "Deployment & Release",
+          "docs": [
+            "58-deployment-and-release/deployment-strategies",
+            "58-deployment-and-release/strangler-fig-and-migration"
+          ]
+        },
+        {
+          "title": "Failure Detection & DR",
+          "docs": [
+            "59-failure-detection-and-dr/heartbeats-and-health-checks",
+            "59-failure-detection-and-dr/disaster-recovery"
+          ]
+        },
+        {
+          "title": "Microservices Patterns",
+          "docs": [
+            "60-microservices-patterns/sidecar-and-bulkhead",
+            "60-microservices-patterns/anti-patterns"
+          ]
+        },
+        {
+          "title": "Stream Processing",
+          "docs": ["61-stream-processing/windowing-and-watermarks"]
+        },
+        {
+          "title": "Data Modeling & Serialization",
+          "docs": [
+            "62-data-modeling-and-serialization/indexing-strategies",
+            "62-data-modeling-and-serialization/schema-evolution-and-serialization"
+          ]
+        },
+        {
+          "title": "Geo & Spatial",
+          "docs": ["63-geo-and-spatial/geohashing-s2-h3"]
+        },
+        {
+          "title": "Multi-tenancy Patterns",
+          "docs": ["64-multi-tenancy-patterns/silo-pool-hybrid"]
+        },
+        {
+          "title": "Outbox & Transactional Messaging",
+          "docs": ["65-outbox-and-transactional-messaging/outbox-pattern"]
+        }
+      ]
+    }
+  ]
+}

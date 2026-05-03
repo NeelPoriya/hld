@@ -411,6 +411,26 @@ Beyond the technologies, every HLD interview tests the *patterns* underneath. Ea
 
 ---
 
+## Generate a printable PDF (for offline / commute prep)
+
+A curated subset of the docs (~20 essential technologies + all 60 key concepts) can be exported as a single, beautifully-typeset LaTeX file you compile in [Overleaf](https://www.overleaf.com).
+
+```bash
+npm run build:pdf
+# Produces dist/pdf/interview-prep.tex (~1 MB).
+```
+
+Then:
+
+1. Open Overleaf → **New Project → Upload Project**.
+2. Upload `dist/pdf/interview-prep.tex`.
+3. **Menu → Settings → Compiler: XeLaTeX**.
+4. Click **Recompile**. The first build takes ~1-2 minutes; subsequent ones are fast.
+
+**Customising what's included:** edit [`scripts/pdf-config.json`](scripts/pdf-config.json) and re-run `npm run build:pdf`. Every doc starts on a fresh page; chapters and parts get their own dividers.
+
+---
+
 ## Reading Order Recommendation (for first-time prep)
 
 1. **PostgreSQL** — baseline you'll be compared against.
