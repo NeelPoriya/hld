@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, BookOpen } from 'lucide-react';
+import { ReadingPath } from '@/components/reading-path';
+import { ProgressPill } from '@/components/progress-pill';
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -40,6 +42,7 @@ export default function HomePage() {
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
           21 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
+        <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Link
             href="/docs"
@@ -60,6 +63,9 @@ export default function HomePage() {
           </a>
         </div>
       </section>
+
+      {/* Recommended Reading Path */}
+      <ReadingPath />
 
       {/* Categories */}
       <section className="flex flex-col gap-6">
