@@ -26,6 +26,11 @@
     "22-service-mesh",
     "23-secrets-and-identity",
     "24-iac",
-    "25-cicd"
+    "25-cicd",
+    "26-serverless-and-faas",
+    "27-cdc-and-data-integration",
+    "28-websockets-and-realtime",
+    "29-graphql",
+    "30-feature-flags-and-experimentation"
   ]
 }

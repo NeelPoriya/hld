@@ -41,6 +41,11 @@ const categories = [
   { name: 'Secrets & Identity', techs: 'Vault, Keycloak', href: '/docs/23-secrets-and-identity/vault' },
   { name: 'Infrastructure as Code', techs: 'Terraform, Pulumi', href: '/docs/24-iac/terraform' },
   { name: 'CI/CD', techs: 'GitHub Actions, ArgoCD', href: '/docs/25-cicd/github-actions' },
+  { name: 'Serverless & FaaS', techs: 'AWS Lambda, Cloudflare Workers', href: '/docs/26-serverless-and-faas/aws-lambda' },
+  { name: 'CDC & Data Integration', techs: 'Debezium, Airbyte', href: '/docs/27-cdc-and-data-integration/debezium' },
+  { name: 'WebSockets & Realtime', techs: 'Socket.IO, Centrifugo', href: '/docs/28-websockets-and-realtime/socket-io' },
+  { name: 'GraphQL', techs: 'Apollo, Hasura', href: '/docs/29-graphql/apollo' },
+  { name: 'Feature Flags & Experimentation', techs: 'LaunchDarkly, Unleash', href: '/docs/30-feature-flags-and-experimentation/launchdarkly' },
 ];
 
 export default function HomePage() {
@@ -55,7 +60,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          71 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          81 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

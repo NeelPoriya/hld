@@ -1,0 +1,4 @@
+{
+  "title": "CDC & Data Integration",
+  "pages": ["debezium", "airbyte"]
+}

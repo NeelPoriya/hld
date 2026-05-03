@@ -156,7 +156,27 @@ All docs live under [content/docs/](content/docs/).
 - [GitHub Actions](content/docs/25-cicd/github-actions.md)
 - [Argo CD](content/docs/25-cicd/argocd.md)
 
-### 26-30. *(more categories coming soon — app-layer, runtimes, edge / serverless)*
+### 26. Serverless & FaaS
+- [AWS Lambda](content/docs/26-serverless-and-faas/aws-lambda.md)
+- [Cloudflare Workers](content/docs/26-serverless-and-faas/cloudflare-workers.md)
+
+### 27. CDC & Data Integration
+- [Debezium](content/docs/27-cdc-and-data-integration/debezium.md)
+- [Airbyte](content/docs/27-cdc-and-data-integration/airbyte.md)
+
+### 28. WebSockets & Realtime
+- [Socket.IO](content/docs/28-websockets-and-realtime/socket-io.md)
+- [Centrifugo](content/docs/28-websockets-and-realtime/centrifugo.md)
+
+### 29. GraphQL
+- [Apollo GraphQL](content/docs/29-graphql/apollo.md)
+- [Hasura](content/docs/29-graphql/hasura.md)
+
+### 30. Feature Flags & Experimentation
+- [LaunchDarkly](content/docs/30-feature-flags-and-experimentation/launchdarkly.md)
+- [Unleash](content/docs/30-feature-flags-and-experimentation/unleash.md)
+
+### 31-40. *(more categories coming soon — AI/ML serving, payments / billing, notifications, DNS, container registries)*
 
 ---
 
@@ -203,6 +223,16 @@ All docs live under [content/docs/](content/docs/).
 | Multi-cloud Infrastructure as Code | Terraform / Pulumi | Declarative HCL or real-language IaC |
 | CI for build/test/release | GitHub Actions | Native to GitHub; YAML workflows |
 | GitOps continuous delivery on Kubernetes | ArgoCD | Reconciles cluster to Git |
+| Event-driven serverless functions | AWS Lambda | Pay-per-ms; auto-scales; 15-min cap |
+| Sub-ms cold start at the edge | Cloudflare Workers | V8 isolates in 300+ POPs; KV / DO / R2 / D1 |
+| Database CDC into Kafka | Debezium | WAL/binlog/oplog → event stream; outbox pattern |
+| ELT from 350+ SaaS / DB sources | Airbyte | OSS Fivetran alternative; YAML CDK |
+| Realtime in Node.js stacks | Socket.IO | Rooms + acks + Redis adapter |
+| Massive WebSocket fan-out | Centrifugo | Polyglot clients; channels + history + recovery |
+| Federated GraphQL gateway | Apollo Federation + Router | Subgraph-per-team supergraph |
+| Instant GraphQL on Postgres | Hasura | Auto-CRUD + row-level auth + subscriptions |
+| Managed feature flags + A/B | LaunchDarkly | Local SDK eval; SSE updates |
+| OSS feature-flag platform | Unleash | Self-hosted; polling SDKs + Edge proxy |
 
 ---
 

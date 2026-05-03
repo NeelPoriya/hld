@@ -224,6 +224,16 @@ export const allDocSlugs: string[] = [
   '24-iac/pulumi',
   '25-cicd/github-actions',
   '25-cicd/argocd',
+  '26-serverless-and-faas/aws-lambda',
+  '26-serverless-and-faas/cloudflare-workers',
+  '27-cdc-and-data-integration/debezium',
+  '27-cdc-and-data-integration/airbyte',
+  '28-websockets-and-realtime/socket-io',
+  '28-websockets-and-realtime/centrifugo',
+  '29-graphql/apollo',
+  '29-graphql/hasura',
+  '30-feature-flags-and-experimentation/launchdarkly',
+  '30-feature-flags-and-experimentation/unleash',
 ];
 
 /**

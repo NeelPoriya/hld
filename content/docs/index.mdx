@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -50,6 +50,11 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<Shield />} title="Secrets & Identity" href="/docs/23-secrets-and-identity/vault" description="Vault, Keycloak" />
   <Card icon={<Workflow />} title="Infrastructure as Code" href="/docs/24-iac/terraform" description="Terraform, Pulumi" />
   <Card icon={<GitBranch />} title="CI/CD" href="/docs/25-cicd/github-actions" description="GitHub Actions, ArgoCD" />
+  <Card icon={<Server />} title="Serverless & FaaS" href="/docs/26-serverless-and-faas/aws-lambda" description="AWS Lambda, Cloudflare Workers" />
+  <Card icon={<Repeat />} title="CDC & Data Integration" href="/docs/27-cdc-and-data-integration/debezium" description="Debezium, Airbyte" />
+  <Card icon={<Radio />} title="WebSockets & Realtime" href="/docs/28-websockets-and-realtime/socket-io" description="Socket.IO, Centrifugo" />
+  <Card icon={<Code />} title="GraphQL" href="/docs/29-graphql/apollo" description="Apollo, Hasura" />
+  <Card icon={<Flag />} title="Feature Flags & Experimentation" href="/docs/30-feature-flags-and-experimentation/launchdarkly" description="LaunchDarkly, Unleash" />
 </Cards>
 
 ## Per-Page Structure
@@ -114,6 +119,16 @@ Every technology page follows the same template:
 | Multi-cloud Infrastructure as Code | Terraform / Pulumi | Declarative HCL or real-language IaC |
 | CI for build/test/release | GitHub Actions | Native to GitHub; YAML workflows |
 | GitOps continuous delivery on Kubernetes | ArgoCD | Reconciles cluster to Git |
+| Event-driven serverless functions | AWS Lambda | Pay-per-ms; auto-scales; 15-min cap |
+| Sub-ms cold start at the edge | Cloudflare Workers | V8 isolates in 300+ POPs; KV / DO / R2 / D1 |
+| Database CDC into Kafka | Debezium | WAL/binlog/oplog → event stream; outbox pattern |
+| ELT from 350+ SaaS / DB sources | Airbyte | OSS Fivetran alternative; YAML CDK |
+| Realtime in Node.js stacks | Socket.IO | Rooms + acks + Redis adapter |
+| Massive WebSocket fan-out | Centrifugo | Polyglot clients; channels + history + recovery |
+| Federated GraphQL gateway | Apollo Federation + Router | Subgraph-per-team supergraph |
+| Instant GraphQL on Postgres | Hasura | Auto-CRUD + row-level auth + subscriptions |
+| Managed feature flags + A/B | LaunchDarkly | Local SDK eval; SSE updates |
+| OSS feature-flag platform | Unleash | Self-hosted; polling SDKs + Edge proxy |
 
 <Callout type="info">
 Built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org), deployed automatically to GitHub Pages on every push to `main`.
