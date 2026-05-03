@@ -1,0 +1,4 @@
+{
+  "title": "Fan-out Patterns",
+  "pages": ["fan-out-on-write", "fan-out-on-read", "hybrid-fanout"]
+}

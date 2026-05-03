@@ -216,7 +216,58 @@ All docs live under [content/docs/](content/docs/).
 - [Sidekiq](content/docs/40-job-queues/sidekiq.md)
 - [BullMQ](content/docs/40-job-queues/bullmq.md)
 
-### 41-45. *(more categories coming soon — serverless databases, embedded / local-first DBs, low-code / iPaaS, file sync, real-time collab)*
+### 41-45. *(more technology categories coming soon — serverless databases, embedded / local-first DBs, low-code / iPaaS, file sync, real-time collab)*
+
+---
+
+## Key Concepts (the patterns themselves)
+
+Beyond the technologies, every HLD interview tests the *patterns* underneath. Each concept page covers **what problem it solves**, **where to use it (with real-world examples)**, **where NOT to use it**, and **what to consider**.
+
+### Caching Patterns
+- [Caching Strategies](content/docs/41-caching/caching-strategies.md) — cache-aside, read-through, write-through, write-back, refresh-ahead; stampede protection.
+- [Consistent Hashing](content/docs/41-caching/consistent-hashing.md) — distribute keys with bounded remap on resize.
+
+### Data Distribution
+- [Sharding & Partitioning](content/docs/42-data-distribution/sharding-and-partitioning.md) — range / hash / directory; choosing the partition key; hot-shard pitfalls.
+- [Replication Strategies](content/docs/42-data-distribution/replication-strategies.md) — single / multi-leader / leaderless; sync vs async; quorums.
+
+### Time & Ordering
+- [Clock Skew & NTP](content/docs/43-time-and-ordering/clock-skew-and-ntp.md) — why wall clocks lie, NTP / PTP / TrueTime, leap seconds.
+- [Logical Clocks](content/docs/43-time-and-ordering/logical-clocks.md) — Lamport, vector, version vector, Hybrid Logical Clock (HLC).
+
+### Delivery Semantics
+- [Delivery Guarantees](content/docs/44-delivery-semantics/delivery-guarantees.md) — at-most / at-least / exactly-once; the two-generals problem.
+- [Idempotency](content/docs/44-delivery-semantics/idempotency.md) — idempotency keys, dedup tables, transactional outbox.
+
+### Resilience Patterns
+- [Circuit Breaker](content/docs/45-resilience-patterns/circuit-breaker.md) — Closed / Open / Half-Open; Hystrix / Resilience4j / Envoy outlier detection.
+- [Retry & Backoff](content/docs/45-resilience-patterns/retry-and-backoff.md) — exponential backoff, jitter, retry budgets, deadline propagation, hedged requests.
+- [Backpressure](content/docs/45-resilience-patterns/backpressure.md) — bounded queues, Reactive Streams, load shedding, adaptive concurrency limits.
+- [Rate Limiting](content/docs/45-resilience-patterns/rate-limiting.md) — token bucket, leaky bucket, fixed / sliding window; distributed limiters.
+
+### Fan-out Patterns
+- [Fan-out on Write](content/docs/46-fanout-patterns/fan-out-on-write.md) — push: pre-build per-recipient timelines.
+- [Fan-out on Read](content/docs/46-fanout-patterns/fan-out-on-read.md) — pull: aggregate at read time.
+- [Hybrid Fan-out](content/docs/46-fanout-patterns/hybrid-fanout.md) — what real social-media production uses.
+
+### Event-Driven Architecture
+- [Event Sourcing](content/docs/47-event-driven-architecture/event-sourcing.md) — store every state change as an immutable event.
+- [CQRS](content/docs/47-event-driven-architecture/cqrs.md) — separate read and write models.
+- [Saga Pattern](content/docs/47-event-driven-architecture/saga-pattern.md) — long-running distributed transactions with compensations.
+
+### Storage Internals
+- [Write-Ahead Log (WAL)](content/docs/48-storage-internals/write-ahead-log.md) — the substrate of durable databases.
+- [LSM Trees vs B-Trees](content/docs/48-storage-internals/lsm-vs-btree.md) — the two dominant storage engine designs.
+
+### Probabilistic Data Structures
+- [Bloom Filter](content/docs/49-probabilistic-data-structures/bloom-filter.md) — set membership in tiny memory.
+- [HyperLogLog & Count-Min Sketch](content/docs/49-probabilistic-data-structures/hyperloglog-and-count-min.md) — cardinality + frequency estimation in fixed memory.
+
+### Network & Traffic Routing
+- [Forward Proxy vs Reverse Proxy vs LB vs API Gateway](content/docs/50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway.md) — the four-quadrant comparison.
+- [Load Balancing Algorithms](content/docs/50-network-traffic-routing/load-balancing-algorithms.md) — round-robin, least-connections, P2C, hash, weighted, geographic.
+- [L4 vs L7 Load Balancing](content/docs/50-network-traffic-routing/l4-vs-l7-load-balancing.md) — TCP-level vs HTTP-aware; when to stack them.
 
 ---
 

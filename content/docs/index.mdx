@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass, CreditCard, Package, Video, ListChecks } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass, CreditCard, Package, Video, ListChecks, Hash, Clock, ShieldCheck, Share2, Scroll, Filter, Route, Lightbulb } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -65,6 +65,23 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<Video />} title="Video & Streaming Media" href="/docs/38-video-and-streaming-media/mux" description="Mux, Cloudflare Stream" />
   <Card icon={<Server />} title="Backend-as-a-Service" href="/docs/39-backend-as-a-service/supabase" description="Supabase, Firebase" />
   <Card icon={<ListChecks />} title="Job Queues & Background Workers" href="/docs/40-job-queues/sidekiq" description="Sidekiq, BullMQ" />
+</Cards>
+
+## Browse Key Concepts
+
+Fundamental distributed-systems patterns and ideas that show up in every HLD interview — caching, sharding, replication, idempotency, circuit breaker, fan-out, event sourcing, CAP, and more. Each concept explains **what problem it solves**, **where to use it (with real-world examples)**, **where NOT to use it**, and **what to watch out for**.
+
+<Cards>
+  <Card icon={<Zap />} title="Caching Patterns" href="/docs/41-caching/caching-strategies" description="Cache-aside, write-through, stampede protection, consistent hashing" />
+  <Card icon={<Hash />} title="Data Distribution" href="/docs/42-data-distribution/sharding-and-partitioning" description="Sharding, partitioning, replication strategies" />
+  <Card icon={<Clock />} title="Time & Ordering" href="/docs/43-time-and-ordering/clock-skew-and-ntp" description="Clock skew, NTP, Lamport / vector / hybrid logical clocks" />
+  <Card icon={<ShieldCheck />} title="Delivery Semantics" href="/docs/44-delivery-semantics/delivery-guarantees" description="At-most / at-least / exactly-once + idempotency" />
+  <Card icon={<Shield />} title="Resilience Patterns" href="/docs/45-resilience-patterns/circuit-breaker" description="Circuit breaker, retry/backoff, backpressure, rate limiting" />
+  <Card icon={<Share2 />} title="Fan-out Patterns" href="/docs/46-fanout-patterns/fan-out-on-write" description="Fan-out on write / read / hybrid — the timeline problem" />
+  <Card icon={<Workflow />} title="Event-Driven Architecture" href="/docs/47-event-driven-architecture/event-sourcing" description="Event sourcing, CQRS, saga pattern" />
+  <Card icon={<Scroll />} title="Storage Internals" href="/docs/48-storage-internals/write-ahead-log" description="Write-Ahead Log, LSM trees vs B-Trees" />
+  <Card icon={<Filter />} title="Probabilistic Data Structures" href="/docs/49-probabilistic-data-structures/bloom-filter" description="Bloom filter, HyperLogLog, Count-Min Sketch" />
+  <Card icon={<Route />} title="Network & Traffic Routing" href="/docs/50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway" description="Proxy vs reverse proxy vs LB vs API gateway; L4 vs L7; LB algorithms" />
 </Cards>
 
 ## Per-Page Structure

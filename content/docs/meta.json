@@ -2,6 +2,7 @@
   "title": "Documentation",
   "pages": [
     "index",
+    "---Key Technologies---",
     "01-relational-databases",
     "02-key-value-stores",
     "03-wide-column-stores",
@@ -41,6 +42,17 @@
     "37-container-registries",
     "38-video-and-streaming-media",
     "39-backend-as-a-service",
-    "40-job-queues"
+    "40-job-queues",
+    "---Key Concepts---",
+    "41-caching",
+    "42-data-distribution",
+    "43-time-and-ordering",
+    "44-delivery-semantics",
+    "45-resilience-patterns",
+    "46-fanout-patterns",
+    "47-event-driven-architecture",
+    "48-storage-internals",
+    "49-probabilistic-data-structures",
+    "50-network-traffic-routing"
   ]
 }

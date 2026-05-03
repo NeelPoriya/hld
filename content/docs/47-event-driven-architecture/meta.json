@@ -1,0 +1,4 @@
+{
+  "title": "Event-Driven Architecture",
+  "pages": ["event-sourcing", "cqrs", "saga-pattern"]
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Resilience Patterns",
+  "pages": ["circuit-breaker", "retry-and-backoff", "backpressure", "rate-limiting"]
+}

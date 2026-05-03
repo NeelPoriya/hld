@@ -1,0 +1,4 @@
+{
+  "title": "Delivery Semantics",
+  "pages": ["delivery-guarantees", "idempotency"]
+}

@@ -58,6 +58,19 @@ const categories = [
   { name: 'Job Queues & Background Workers', techs: 'Sidekiq, BullMQ', href: '/docs/40-job-queues/sidekiq' },
 ];
 
+const concepts = [
+  { name: 'Caching Patterns', techs: 'Cache-aside, write-through, stampede protection, consistent hashing', href: '/docs/41-caching/caching-strategies' },
+  { name: 'Data Distribution', techs: 'Sharding, partitioning, replication strategies', href: '/docs/42-data-distribution/sharding-and-partitioning' },
+  { name: 'Time & Ordering', techs: 'Clock skew, NTP, Lamport / vector / hybrid logical clocks', href: '/docs/43-time-and-ordering/clock-skew-and-ntp' },
+  { name: 'Delivery Semantics', techs: 'At-most / at-least / exactly-once, idempotency', href: '/docs/44-delivery-semantics/delivery-guarantees' },
+  { name: 'Resilience Patterns', techs: 'Circuit breaker, retry/backoff, backpressure, rate limiting', href: '/docs/45-resilience-patterns/circuit-breaker' },
+  { name: 'Fan-out Patterns', techs: 'Fan-out on write / read / hybrid', href: '/docs/46-fanout-patterns/fan-out-on-write' },
+  { name: 'Event-Driven Architecture', techs: 'Event sourcing, CQRS, saga pattern', href: '/docs/47-event-driven-architecture/event-sourcing' },
+  { name: 'Storage Internals', techs: 'Write-Ahead Log, LSM trees vs B-Trees', href: '/docs/48-storage-internals/write-ahead-log' },
+  { name: 'Probabilistic Data Structures', techs: 'Bloom filter, HyperLogLog, Count-Min Sketch', href: '/docs/49-probabilistic-data-structures/bloom-filter' },
+  { name: 'Network & Traffic Routing', techs: 'Proxy vs reverse proxy vs LB vs API gateway; L4 vs L7', href: '/docs/50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway' },
+];
+
 export default function HomePage() {
   return (
     <main className="container mx-auto flex flex-col gap-16 px-4 py-16 lg:py-24">
@@ -70,7 +83,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          101 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          101 technologies + 21 key concepts, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
@@ -101,12 +114,37 @@ export default function HomePage() {
       <section className="flex flex-col gap-6">
         <div className="flex items-end justify-between">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Browse by Category</h2>
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Browse Key Technologies</h2>
             <p className="mt-1 text-sm text-fd-muted-foreground">Pick the layer you&rsquo;re studying — every page follows the same 14-section template.</p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => (
+            <Link
+              key={c.name}
+              href={c.href}
+              className="group flex flex-col gap-1 rounded-lg border border-fd-border bg-fd-card p-5 transition hover:border-fd-primary/40 hover:bg-fd-accent"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-base font-semibold">{c.name}</h3>
+                <ArrowRight className="size-4 text-fd-muted-foreground opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
+              </div>
+              <p className="text-sm text-fd-muted-foreground">{c.techs}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Key Concepts */}
+      <section className="flex flex-col gap-6">
+        <div className="flex items-end justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Browse Key Concepts</h2>
+            <p className="mt-1 text-sm text-fd-muted-foreground">Distributed-systems patterns that show up in every HLD interview — each page answers <em>what problem it solves</em>, <em>where to use it</em>, <em>where NOT to use it</em>, and <em>what to consider</em>.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {concepts.map((c) => (
             <Link
               key={c.name}
               href={c.href}
