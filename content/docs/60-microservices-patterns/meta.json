@@ -1,0 +1,4 @@
+{
+  "title": "Microservices Patterns",
+  "pages": ["sidecar-and-bulkhead", "anti-patterns"]
+}

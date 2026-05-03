@@ -269,6 +269,70 @@ Beyond the technologies, every HLD interview tests the *patterns* underneath. Ea
 - [Load Balancing Algorithms](content/docs/50-network-traffic-routing/load-balancing-algorithms.md) — round-robin, least-connections, P2C, hash, weighted, geographic.
 - [L4 vs L7 Load Balancing](content/docs/50-network-traffic-routing/l4-vs-l7-load-balancing.md) — TCP-level vs HTTP-aware; when to stack them.
 
+### Consistency & CAP
+- [CAP Theorem & PACELC](content/docs/51-consistency-and-cap/cap-theorem-and-pacelc.md) — the foundational impossibility.
+- [Consistency Models](content/docs/51-consistency-and-cap/consistency-models.md) — linearizable, sequential, causal, eventual, snapshot.
+- [ACID vs BASE](content/docs/51-consistency-and-cap/acid-vs-base.md) — RDBMS contract vs NoSQL trade.
+
+### Consensus & Coordination
+- [Paxos & Raft](content/docs/52-consensus-and-coordination/paxos-and-raft.md) — the algorithms behind etcd, Spanner, ZooKeeper.
+- [Two-Phase Commit (2PC) & 3PC](content/docs/52-consensus-and-coordination/two-phase-commit.md) — distributed atomic commit + why it blocks.
+- [Leader Election](content/docs/52-consensus-and-coordination/leader-election.md) — consensus-based + lease-based + fencing tokens.
+- [Distributed Locks](content/docs/52-consensus-and-coordination/distributed-locks.md) — Redlock pitfalls, etcd / ZooKeeper recipes, fencing.
+
+### Transactions & Concurrency Control
+- [Isolation Levels](content/docs/53-transactions-and-concurrency/isolation-levels.md) — RC, RR, SI, Serializable + the anomalies.
+- [MVCC vs Locking](content/docs/53-transactions-and-concurrency/mvcc-and-locking.md) — how Postgres / Oracle / InnoDB enforce isolation.
+- [Optimistic vs Pessimistic Concurrency](content/docs/53-transactions-and-concurrency/optimistic-vs-pessimistic.md) — version columns, ETag, FOR UPDATE.
+
+### API Design Patterns
+- [REST vs GraphQL vs gRPC vs WebSocket vs SSE](content/docs/54-api-design-patterns/rest-vs-graphql-vs-grpc.md) — the five API styles.
+- [Pagination Strategies](content/docs/54-api-design-patterns/pagination-strategies.md) — offset / cursor / keyset.
+- [API Versioning](content/docs/54-api-design-patterns/api-versioning.md) — URL / header / date-based.
+
+### Security & Auth
+- [Authentication: OAuth2, OIDC, SAML, JWT](content/docs/55-security-and-auth/authentication-oauth-oidc-saml-jwt.md) — how users prove who they are.
+- [RBAC vs ABAC vs ReBAC](content/docs/55-security-and-auth/rbac-vs-abac.md) — three authorization models.
+- [Encryption: At Rest, In Transit, E2E](content/docs/55-security-and-auth/encryption-and-key-management.md) — KMS / HSM / envelope encryption.
+
+### Network Protocols & Real-time
+- [TCP vs UDP, HTTP/1.1 / 2 / 3 (QUIC)](content/docs/56-network-protocols-and-realtime/tcp-vs-udp-and-http-versions.md) — transport + application protocol evolution.
+- [WebSocket vs SSE vs Long Polling vs WebRTC](content/docs/56-network-protocols-and-realtime/websocket-sse-long-polling.md) — server push and bidirectional channels.
+- [TLS Handshake & mTLS](content/docs/56-network-protocols-and-realtime/tls-and-mtls.md) — encryption + service-to-service auth.
+- [DNS, Anycast & GeoDNS](content/docs/56-network-protocols-and-realtime/dns-and-anycast.md) — hostname → IP, with global routing.
+
+### Observability & SRE
+- [SLI / SLO / SLA & Error Budgets](content/docs/57-observability-and-sre/sli-slo-sla-error-budgets.md) — Google SRE vocabulary.
+- [Metrics, Logs & Traces](content/docs/57-observability-and-sre/metrics-logs-traces.md) — the three observability pillars.
+
+### Deployment & Release
+- [Deployment Strategies](content/docs/58-deployment-and-release/deployment-strategies.md) — rolling, blue-green, canary, shadow, feature flag, A/B.
+- [Strangler Fig & Legacy Migration](content/docs/58-deployment-and-release/strangler-fig-and-migration.md) — incremental replacement.
+
+### Failure Detection & DR
+- [Heartbeats & Health Checks](content/docs/59-failure-detection-and-dr/heartbeats-and-health-checks.md) — gossip, phi-accrual, K8s probes.
+- [Disaster Recovery: RPO, RTO, Multi-Region](content/docs/59-failure-detection-and-dr/disaster-recovery.md) — backup → pilot light → warm standby → active-active.
+
+### Microservices Patterns
+- [Sidecar, Ambassador & Bulkhead](content/docs/60-microservices-patterns/sidecar-and-bulkhead.md) — cloud-native operational patterns.
+- [Microservices Anti-Patterns](content/docs/60-microservices-patterns/anti-patterns.md) — distributed monolith, chatty services, shared DB.
+
+### Stream Processing
+- [Windowing & Watermarks](content/docs/61-stream-processing/windowing-and-watermarks.md) — tumbling / hopping / session, event time vs processing time.
+
+### Data Modeling & Serialization
+- [Database Indexing Strategies](content/docs/62-data-modeling-and-serialization/indexing-strategies.md) — B-tree, hash, GIN, GiST, BRIN, covering, partial.
+- [Schema Evolution & Serialization Formats](content/docs/62-data-modeling-and-serialization/schema-evolution-and-serialization.md) — JSON / Protobuf / Avro / MessagePack.
+
+### Geo & Spatial
+- [Geohashing, S2, H3 & Spatial Indexing](content/docs/63-geo-and-spatial/geohashing-s2-h3.md) — for location-based services.
+
+### Multi-tenancy Patterns
+- [Silo, Pool, Hybrid Models](content/docs/64-multi-tenancy-patterns/silo-pool-hybrid.md) — SaaS isolation strategies.
+
+### Outbox & Transactional Messaging
+- [Outbox Pattern](content/docs/65-outbox-and-transactional-messaging/outbox-pattern.md) — solving the dual-write problem.
+
 ---
 
 ## Quick "Which Tech for Which Problem?" Cheat Sheet

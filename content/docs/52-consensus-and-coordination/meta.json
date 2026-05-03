@@ -1,0 +1,4 @@
+{
+  "title": "Consensus & Coordination",
+  "pages": ["paxos-and-raft", "two-phase-commit", "leader-election", "distributed-locks"]
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Data Modeling & Serialization",
+  "pages": ["indexing-strategies", "schema-evolution-and-serialization"]
+}

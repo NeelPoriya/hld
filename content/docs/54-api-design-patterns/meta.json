@@ -1,0 +1,4 @@
+{
+  "title": "API Design Patterns",
+  "pages": ["rest-vs-graphql-vs-grpc", "pagination-strategies", "api-versioning"]
+}

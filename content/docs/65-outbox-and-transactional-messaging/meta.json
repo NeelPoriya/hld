@@ -1,0 +1,4 @@
+{
+  "title": "Outbox & Transactional Messaging",
+  "pages": ["outbox-pattern"]
+}

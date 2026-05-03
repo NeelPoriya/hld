@@ -1,0 +1,4 @@
+{
+  "title": "Consistency & CAP",
+  "pages": ["cap-theorem-and-pacelc", "consistency-models", "acid-vs-base"]
+}

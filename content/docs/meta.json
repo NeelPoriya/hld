@@ -53,6 +53,21 @@
     "47-event-driven-architecture",
     "48-storage-internals",
     "49-probabilistic-data-structures",
-    "50-network-traffic-routing"
+    "50-network-traffic-routing",
+    "51-consistency-and-cap",
+    "52-consensus-and-coordination",
+    "53-transactions-and-concurrency",
+    "54-api-design-patterns",
+    "55-security-and-auth",
+    "56-network-protocols-and-realtime",
+    "57-observability-and-sre",
+    "58-deployment-and-release",
+    "59-failure-detection-and-dr",
+    "60-microservices-patterns",
+    "61-stream-processing",
+    "62-data-modeling-and-serialization",
+    "63-geo-and-spatial",
+    "64-multi-tenancy-patterns",
+    "65-outbox-and-transactional-messaging"
   ]
 }

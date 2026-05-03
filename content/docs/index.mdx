@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass, CreditCard, Package, Video, ListChecks, Hash, Clock, ShieldCheck, Share2, Scroll, Filter, Route, Lightbulb } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass, CreditCard, Package, Video, ListChecks, Hash, Clock, ShieldCheck, Share2, Scroll, Filter, Route, Lightbulb, Lock, Eye, Rocket, AlertTriangle, MapPin, Users, Send, Cog, GitMerge, Anchor, Award } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -82,6 +82,21 @@ Fundamental distributed-systems patterns and ideas that show up in every HLD int
   <Card icon={<Scroll />} title="Storage Internals" href="/docs/48-storage-internals/write-ahead-log" description="Write-Ahead Log, LSM trees vs B-Trees" />
   <Card icon={<Filter />} title="Probabilistic Data Structures" href="/docs/49-probabilistic-data-structures/bloom-filter" description="Bloom filter, HyperLogLog, Count-Min Sketch" />
   <Card icon={<Route />} title="Network & Traffic Routing" href="/docs/50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway" description="Proxy vs reverse proxy vs LB vs API gateway; L4 vs L7; LB algorithms" />
+  <Card icon={<Award />} title="Consistency & CAP" href="/docs/51-consistency-and-cap/cap-theorem-and-pacelc" description="CAP theorem, PACELC, consistency models, ACID vs BASE" />
+  <Card icon={<Anchor />} title="Consensus & Coordination" href="/docs/52-consensus-and-coordination/paxos-and-raft" description="Paxos / Raft, 2PC, leader election, distributed locks" />
+  <Card icon={<Lock />} title="Transactions & Concurrency" href="/docs/53-transactions-and-concurrency/isolation-levels" description="Isolation levels, MVCC, optimistic vs pessimistic" />
+  <Card icon={<Code />} title="API Design Patterns" href="/docs/54-api-design-patterns/rest-vs-graphql-vs-grpc" description="REST vs GraphQL vs gRPC, pagination, versioning" />
+  <Card icon={<Shield />} title="Security & Auth" href="/docs/55-security-and-auth/authentication-oauth-oidc-saml-jwt" description="OAuth2 / OIDC / SAML / JWT, RBAC / ABAC, encryption" />
+  <Card icon={<Network />} title="Network Protocols & Real-time" href="/docs/56-network-protocols-and-realtime/tcp-vs-udp-and-http-versions" description="TCP vs UDP, HTTP/1/2/3, WebSocket / SSE, TLS / mTLS, DNS" />
+  <Card icon={<Eye />} title="Observability & SRE" href="/docs/57-observability-and-sre/sli-slo-sla-error-budgets" description="SLI / SLO / SLA, metrics / logs / traces, error budgets" />
+  <Card icon={<Rocket />} title="Deployment & Release" href="/docs/58-deployment-and-release/deployment-strategies" description="Blue-green, canary, shadow, feature flags, strangler fig" />
+  <Card icon={<AlertTriangle />} title="Failure Detection & DR" href="/docs/59-failure-detection-and-dr/heartbeats-and-health-checks" description="Heartbeats, health checks, RPO / RTO, multi-region patterns" />
+  <Card icon={<Boxes />} title="Microservices Patterns" href="/docs/60-microservices-patterns/sidecar-and-bulkhead" description="Sidecar / ambassador / bulkhead; anti-patterns" />
+  <Card icon={<GitMerge />} title="Stream Processing" href="/docs/61-stream-processing/windowing-and-watermarks" description="Windowing, watermarks, event vs processing time" />
+  <Card icon={<Cog />} title="Data Modeling & Serialization" href="/docs/62-data-modeling-and-serialization/indexing-strategies" description="Indexing strategies; JSON / Protobuf / Avro / MessagePack" />
+  <Card icon={<MapPin />} title="Geo & Spatial" href="/docs/63-geo-and-spatial/geohashing-s2-h3" description="Geohashing, S2, H3, R-trees" />
+  <Card icon={<Users />} title="Multi-tenancy Patterns" href="/docs/64-multi-tenancy-patterns/silo-pool-hybrid" description="Silo, pool, hybrid; shuffle sharding" />
+  <Card icon={<Send />} title="Outbox & Transactional Messaging" href="/docs/65-outbox-and-transactional-messaging/outbox-pattern" description="Outbox pattern, dual-write problem, inbox pattern" />
 </Cards>
 
 ## Per-Page Structure

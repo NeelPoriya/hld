@@ -69,6 +69,21 @@ const concepts = [
   { name: 'Storage Internals', techs: 'Write-Ahead Log, LSM trees vs B-Trees', href: '/docs/48-storage-internals/write-ahead-log' },
   { name: 'Probabilistic Data Structures', techs: 'Bloom filter, HyperLogLog, Count-Min Sketch', href: '/docs/49-probabilistic-data-structures/bloom-filter' },
   { name: 'Network & Traffic Routing', techs: 'Proxy vs reverse proxy vs LB vs API gateway; L4 vs L7', href: '/docs/50-network-traffic-routing/proxy-vs-reverse-proxy-vs-lb-vs-gateway' },
+  { name: 'Consistency & CAP', techs: 'CAP theorem, PACELC, consistency models, ACID vs BASE', href: '/docs/51-consistency-and-cap/cap-theorem-and-pacelc' },
+  { name: 'Consensus & Coordination', techs: 'Paxos / Raft, 2PC, leader election, distributed locks', href: '/docs/52-consensus-and-coordination/paxos-and-raft' },
+  { name: 'Transactions & Concurrency', techs: 'Isolation levels, MVCC, optimistic vs pessimistic', href: '/docs/53-transactions-and-concurrency/isolation-levels' },
+  { name: 'API Design Patterns', techs: 'REST vs GraphQL vs gRPC, pagination, versioning', href: '/docs/54-api-design-patterns/rest-vs-graphql-vs-grpc' },
+  { name: 'Security & Auth', techs: 'OAuth2 / OIDC / SAML / JWT, RBAC / ABAC, encryption', href: '/docs/55-security-and-auth/authentication-oauth-oidc-saml-jwt' },
+  { name: 'Network Protocols & Real-time', techs: 'TCP vs UDP, HTTP/1/2/3, WebSocket / SSE, TLS / mTLS, DNS', href: '/docs/56-network-protocols-and-realtime/tcp-vs-udp-and-http-versions' },
+  { name: 'Observability & SRE', techs: 'SLI / SLO / SLA, metrics / logs / traces, error budgets', href: '/docs/57-observability-and-sre/sli-slo-sla-error-budgets' },
+  { name: 'Deployment & Release', techs: 'Blue-green, canary, shadow, feature flags, strangler fig', href: '/docs/58-deployment-and-release/deployment-strategies' },
+  { name: 'Failure Detection & DR', techs: 'Heartbeats, health checks, RPO / RTO, multi-region patterns', href: '/docs/59-failure-detection-and-dr/heartbeats-and-health-checks' },
+  { name: 'Microservices Patterns', techs: 'Sidecar / ambassador / bulkhead; anti-patterns', href: '/docs/60-microservices-patterns/sidecar-and-bulkhead' },
+  { name: 'Stream Processing', techs: 'Windowing, watermarks, event vs processing time', href: '/docs/61-stream-processing/windowing-and-watermarks' },
+  { name: 'Data Modeling & Serialization', techs: 'Indexing strategies; JSON / Protobuf / Avro / MessagePack', href: '/docs/62-data-modeling-and-serialization/indexing-strategies' },
+  { name: 'Geo & Spatial', techs: 'Geohashing, S2, H3, R-trees', href: '/docs/63-geo-and-spatial/geohashing-s2-h3' },
+  { name: 'Multi-tenancy Patterns', techs: 'Silo, pool, hybrid; shuffle sharding', href: '/docs/64-multi-tenancy-patterns/silo-pool-hybrid' },
+  { name: 'Outbox & Transactional Messaging', techs: 'Outbox pattern, dual-write problem, inbox pattern', href: '/docs/65-outbox-and-transactional-messaging/outbox-pattern' },
 ];
 
 export default function HomePage() {
@@ -83,7 +98,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          101 technologies + 21 key concepts, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          101 technologies + 50+ key concepts, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
