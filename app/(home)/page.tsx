@@ -51,6 +51,11 @@ const categories = [
   { name: 'Notifications & Communications', techs: 'Twilio, SendGrid', href: '/docs/33-notifications/twilio' },
   { name: 'DNS & Service Discovery', techs: 'Route 53, Consul', href: '/docs/34-dns-and-service-discovery/route53' },
   { name: 'Search-as-a-Service', techs: 'Algolia, Typesense', href: '/docs/35-search-as-a-service/algolia' },
+  { name: 'Payments & Billing', techs: 'Stripe, Paddle', href: '/docs/36-payments-and-billing/stripe' },
+  { name: 'Container Registries', techs: 'Harbor, ECR', href: '/docs/37-container-registries/harbor' },
+  { name: 'Video & Streaming Media', techs: 'Mux, Cloudflare Stream', href: '/docs/38-video-and-streaming-media/mux' },
+  { name: 'Backend-as-a-Service', techs: 'Supabase, Firebase', href: '/docs/39-backend-as-a-service/supabase' },
+  { name: 'Job Queues & Background Workers', techs: 'Sidekiq, BullMQ', href: '/docs/40-job-queues/sidekiq' },
 ];
 
 export default function HomePage() {
@@ -65,7 +70,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          91 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          101 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

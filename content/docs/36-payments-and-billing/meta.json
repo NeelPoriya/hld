@@ -1,0 +1,4 @@
+{
+  "title": "Payments & Billing",
+  "pages": ["stripe", "paddle"]
+}

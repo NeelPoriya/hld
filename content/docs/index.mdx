@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass, CreditCard, Package, Video, ListChecks } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -60,6 +60,11 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<MessageSquare />} title="Notifications & Communications" href="/docs/33-notifications/twilio" description="Twilio, SendGrid" />
   <Card icon={<Compass />} title="DNS & Service Discovery" href="/docs/34-dns-and-service-discovery/route53" description="Route 53, Consul" />
   <Card icon={<Search />} title="Search-as-a-Service" href="/docs/35-search-as-a-service/algolia" description="Algolia, Typesense" />
+  <Card icon={<CreditCard />} title="Payments & Billing" href="/docs/36-payments-and-billing/stripe" description="Stripe, Paddle" />
+  <Card icon={<Package />} title="Container Registries" href="/docs/37-container-registries/harbor" description="Harbor, ECR" />
+  <Card icon={<Video />} title="Video & Streaming Media" href="/docs/38-video-and-streaming-media/mux" description="Mux, Cloudflare Stream" />
+  <Card icon={<Server />} title="Backend-as-a-Service" href="/docs/39-backend-as-a-service/supabase" description="Supabase, Firebase" />
+  <Card icon={<ListChecks />} title="Job Queues & Background Workers" href="/docs/40-job-queues/sidekiq" description="Sidekiq, BullMQ" />
 </Cards>
 
 ## Per-Page Structure
@@ -144,6 +149,16 @@ Every technology page follows the same template:
 | Service discovery + KV + mesh on VMs | Consul | Raft cluster + agent gossip + Connect (Envoy) |
 | Hosted search with InstantSearch UI | Algolia | Faceted search; DSN; A/B + Recommend |
 | Open-source typo-tolerant search engine | Typesense | Single-binary C++; vector + lexical |
+| Global card payments + subscriptions | Stripe | PaymentIntents + idempotency + signed webhooks |
+| Merchant of Record for SaaS (handles tax / VAT / GST) | Paddle | Paddle is legal seller; ~5% take + dunning |
+| Self-hosted OCI registry with scanning + signing | Harbor | Trivy + Cosign + RBAC + replication |
+| AWS-managed Docker registry | ECR | IAM auth + scanning + lifecycle + pull-through cache |
+| API-first VOD + live + DRM + analytics | Mux | Per-title encoding + Mux Player + Mux Data |
+| Per-minute-priced video on Cloudflare edge | Cloudflare Stream | LL-HLS + WebRTC + Workers integration |
+| OSS Firebase alternative on Postgres | Supabase | RLS + Realtime + Auth + Storage + Edge Functions |
+| Mobile-first BaaS (NoSQL + Auth + FCM) | Firebase | Firestore + Security Rules + Cloud Functions |
+| Ruby background jobs on Redis | Sidekiq | Multi-threaded; retries + scheduled + cron + UI |
+| Node / TypeScript background jobs on Redis | BullMQ | Streams-backed; Flows + rate limiter + Bull Board |
 
 <Callout type="info">
 Built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org), deployed automatically to GitHub Pages on every push to `main`.

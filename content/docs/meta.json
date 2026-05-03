@@ -36,6 +36,11 @@
     "32-auth-as-a-service",
     "33-notifications",
     "34-dns-and-service-discovery",
-    "35-search-as-a-service"
+    "35-search-as-a-service",
+    "36-payments-and-billing",
+    "37-container-registries",
+    "38-video-and-streaming-media",
+    "39-backend-as-a-service",
+    "40-job-queues"
   ]
 }

@@ -196,7 +196,27 @@ All docs live under [content/docs/](content/docs/).
 - [Algolia](content/docs/35-search-as-a-service/algolia.md)
 - [Typesense](content/docs/35-search-as-a-service/typesense.md)
 
-### 36-40. *(more categories coming soon — payments / billing, container registries, video / streaming media, file sync, low-code / iPaaS)*
+### 36. Payments & Billing
+- [Stripe](content/docs/36-payments-and-billing/stripe.md)
+- [Paddle](content/docs/36-payments-and-billing/paddle.md)
+
+### 37. Container Registries
+- [Harbor](content/docs/37-container-registries/harbor.md)
+- [Amazon ECR](content/docs/37-container-registries/ecr.md)
+
+### 38. Video & Streaming Media
+- [Mux](content/docs/38-video-and-streaming-media/mux.md)
+- [Cloudflare Stream](content/docs/38-video-and-streaming-media/cloudflare-stream.md)
+
+### 39. Backend-as-a-Service
+- [Supabase](content/docs/39-backend-as-a-service/supabase.md)
+- [Firebase](content/docs/39-backend-as-a-service/firebase.md)
+
+### 40. Job Queues & Background Workers
+- [Sidekiq](content/docs/40-job-queues/sidekiq.md)
+- [BullMQ](content/docs/40-job-queues/bullmq.md)
+
+### 41-45. *(more categories coming soon — serverless databases, embedded / local-first DBs, low-code / iPaaS, file sync, real-time collab)*
 
 ---
 
@@ -263,6 +283,16 @@ All docs live under [content/docs/](content/docs/).
 | Service discovery + KV + mesh on VMs | Consul | Raft cluster + agent gossip + Connect (Envoy) |
 | Hosted search with InstantSearch UI | Algolia | Faceted search; DSN; A/B + Recommend |
 | Open-source typo-tolerant search engine | Typesense | Single-binary C++; vector + lexical |
+| Global card payments + subscriptions | Stripe | PaymentIntents + idempotency + signed webhooks |
+| Merchant of Record for SaaS (tax / VAT / GST) | Paddle | Paddle is legal seller; ~5% take + dunning |
+| Self-hosted OCI registry with scanning + signing | Harbor | Trivy + Cosign + RBAC + replication |
+| AWS-managed Docker registry | ECR | IAM auth + scanning + lifecycle + pull-through cache |
+| API-first VOD + live + DRM + analytics | Mux | Per-title encoding + Mux Player + Mux Data |
+| Per-minute-priced video on Cloudflare edge | Cloudflare Stream | LL-HLS + WebRTC + Workers integration |
+| OSS Firebase alternative on Postgres | Supabase | RLS + Realtime + Auth + Storage + Edge Functions |
+| Mobile-first BaaS (NoSQL + Auth + FCM) | Firebase | Firestore + Security Rules + Cloud Functions |
+| Ruby background jobs on Redis | Sidekiq | Multi-threaded; retries + scheduled + cron + UI |
+| Node / TypeScript background jobs on Redis | BullMQ | Streams-backed; Flows + rate limiter + Bull Board |
 
 ---
 

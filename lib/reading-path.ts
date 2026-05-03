@@ -244,6 +244,16 @@ export const allDocSlugs: string[] = [
   '34-dns-and-service-discovery/consul',
   '35-search-as-a-service/algolia',
   '35-search-as-a-service/typesense',
+  '36-payments-and-billing/stripe',
+  '36-payments-and-billing/paddle',
+  '37-container-registries/harbor',
+  '37-container-registries/ecr',
+  '38-video-and-streaming-media/mux',
+  '38-video-and-streaming-media/cloudflare-stream',
+  '39-backend-as-a-service/supabase',
+  '39-backend-as-a-service/firebase',
+  '40-job-queues/sidekiq',
+  '40-job-queues/bullmq',
 ];
 
 /**
