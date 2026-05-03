@@ -234,6 +234,16 @@ export const allDocSlugs: string[] = [
   '29-graphql/hasura',
   '30-feature-flags-and-experimentation/launchdarkly',
   '30-feature-flags-and-experimentation/unleash',
+  '31-ai-ml-serving/vllm',
+  '31-ai-ml-serving/bentoml',
+  '32-auth-as-a-service/auth0',
+  '32-auth-as-a-service/okta',
+  '33-notifications/twilio',
+  '33-notifications/sendgrid',
+  '34-dns-and-service-discovery/route53',
+  '34-dns-and-service-discovery/consul',
+  '35-search-as-a-service/algolia',
+  '35-search-as-a-service/typesense',
 ];
 
 /**

@@ -46,6 +46,11 @@ const categories = [
   { name: 'WebSockets & Realtime', techs: 'Socket.IO, Centrifugo', href: '/docs/28-websockets-and-realtime/socket-io' },
   { name: 'GraphQL', techs: 'Apollo, Hasura', href: '/docs/29-graphql/apollo' },
   { name: 'Feature Flags & Experimentation', techs: 'LaunchDarkly, Unleash', href: '/docs/30-feature-flags-and-experimentation/launchdarkly' },
+  { name: 'AI / ML Serving', techs: 'vLLM, BentoML', href: '/docs/31-ai-ml-serving/vllm' },
+  { name: 'Auth-as-a-Service', techs: 'Auth0, Okta', href: '/docs/32-auth-as-a-service/auth0' },
+  { name: 'Notifications & Communications', techs: 'Twilio, SendGrid', href: '/docs/33-notifications/twilio' },
+  { name: 'DNS & Service Discovery', techs: 'Route 53, Consul', href: '/docs/34-dns-and-service-discovery/route53' },
+  { name: 'Search-as-a-Service', techs: 'Algolia, Typesense', href: '/docs/35-search-as-a-service/algolia' },
 ];
 
 export default function HomePage() {
@@ -60,7 +65,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          81 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          91 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

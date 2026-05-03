@@ -176,7 +176,27 @@ All docs live under [content/docs/](content/docs/).
 - [LaunchDarkly](content/docs/30-feature-flags-and-experimentation/launchdarkly.md)
 - [Unleash](content/docs/30-feature-flags-and-experimentation/unleash.md)
 
-### 31-40. *(more categories coming soon — AI/ML serving, payments / billing, notifications, DNS, container registries)*
+### 31. AI / ML Serving
+- [vLLM](content/docs/31-ai-ml-serving/vllm.md)
+- [BentoML](content/docs/31-ai-ml-serving/bentoml.md)
+
+### 32. Auth-as-a-Service
+- [Auth0](content/docs/32-auth-as-a-service/auth0.md)
+- [Okta](content/docs/32-auth-as-a-service/okta.md)
+
+### 33. Notifications & Communications
+- [Twilio](content/docs/33-notifications/twilio.md)
+- [SendGrid](content/docs/33-notifications/sendgrid.md)
+
+### 34. DNS & Service Discovery
+- [Route 53](content/docs/34-dns-and-service-discovery/route53.md)
+- [Consul](content/docs/34-dns-and-service-discovery/consul.md)
+
+### 35. Search-as-a-Service
+- [Algolia](content/docs/35-search-as-a-service/algolia.md)
+- [Typesense](content/docs/35-search-as-a-service/typesense.md)
+
+### 36-40. *(more categories coming soon — payments / billing, container registries, video / streaming media, file sync, low-code / iPaaS)*
 
 ---
 
@@ -233,6 +253,16 @@ All docs live under [content/docs/](content/docs/).
 | Instant GraphQL on Postgres | Hasura | Auto-CRUD + row-level auth + subscriptions |
 | Managed feature flags + A/B | LaunchDarkly | Local SDK eval; SSE updates |
 | OSS feature-flag platform | Unleash | Self-hosted; polling SDKs + Edge proxy |
+| Self-host LLM at production throughput | vLLM | PagedAttention + continuous batching |
+| Framework-agnostic ML serving | BentoML | Bento package + adaptive batching |
+| Drop-in OIDC / OAuth2 / SAML for any app | Auth0 | Universal Login + Actions + Organizations |
+| Enterprise workforce SSO + lifecycle mgmt | Okta | SAML + SCIM + adaptive MFA |
+| Programmable SMS / voice / WhatsApp / Verify | Twilio | Global carrier fabric behind REST API |
+| Transactional email at scale | SendGrid | Dynamic Templates + Event Webhook |
+| AWS-native multi-region DNS routing | Route 53 | Anycast + latency / geo / failover policies |
+| Service discovery + KV + mesh on VMs | Consul | Raft cluster + agent gossip + Connect (Envoy) |
+| Hosted search with InstantSearch UI | Algolia | Faceted search; DSN; A/B + Recommend |
+| Open-source typo-tolerant search engine | Typesense | Single-binary C++; vector + lexical |
 
 ---
 

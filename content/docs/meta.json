@@ -31,6 +31,11 @@
     "27-cdc-and-data-integration",
     "28-websockets-and-realtime",
     "29-graphql",
-    "30-feature-flags-and-experimentation"
+    "30-feature-flags-and-experimentation",
+    "31-ai-ml-serving",
+    "32-auth-as-a-service",
+    "33-notifications",
+    "34-dns-and-service-discovery",
+    "35-search-as-a-service"
   ]
 }

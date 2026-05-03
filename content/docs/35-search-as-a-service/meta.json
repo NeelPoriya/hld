@@ -1,0 +1,4 @@
+{
+  "title": "Search-as-a-Service",
+  "pages": ["algolia", "typesense"]
+}

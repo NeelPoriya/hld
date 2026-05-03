@@ -5,7 +5,7 @@ description: A revision-friendly knowledge base of the technologies that come up
 
 import { Callout } from 'fumadocs-ui/components/callout';
 import { Cards, Card } from 'fumadocs-ui/components/card';
-import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag } from 'lucide-react';
+import { Database, Zap, Search, Layers, Workflow, BarChart3, GitBranch, Cloud, Network, Activity, Brain, HardDrive, Shield, Globe, Boxes, KeyRound, LineChart, Server, Repeat, Radio, Code, Flag, Sparkles, UserCheck, MessageSquare, Compass } from 'lucide-react';
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
@@ -55,6 +55,11 @@ Head to the [home page](/) to follow the **Recommended Reading Path** — a cura
   <Card icon={<Radio />} title="WebSockets & Realtime" href="/docs/28-websockets-and-realtime/socket-io" description="Socket.IO, Centrifugo" />
   <Card icon={<Code />} title="GraphQL" href="/docs/29-graphql/apollo" description="Apollo, Hasura" />
   <Card icon={<Flag />} title="Feature Flags & Experimentation" href="/docs/30-feature-flags-and-experimentation/launchdarkly" description="LaunchDarkly, Unleash" />
+  <Card icon={<Sparkles />} title="AI / ML Serving" href="/docs/31-ai-ml-serving/vllm" description="vLLM, BentoML" />
+  <Card icon={<UserCheck />} title="Auth-as-a-Service" href="/docs/32-auth-as-a-service/auth0" description="Auth0, Okta" />
+  <Card icon={<MessageSquare />} title="Notifications & Communications" href="/docs/33-notifications/twilio" description="Twilio, SendGrid" />
+  <Card icon={<Compass />} title="DNS & Service Discovery" href="/docs/34-dns-and-service-discovery/route53" description="Route 53, Consul" />
+  <Card icon={<Search />} title="Search-as-a-Service" href="/docs/35-search-as-a-service/algolia" description="Algolia, Typesense" />
 </Cards>
 
 ## Per-Page Structure
@@ -129,6 +134,16 @@ Every technology page follows the same template:
 | Instant GraphQL on Postgres | Hasura | Auto-CRUD + row-level auth + subscriptions |
 | Managed feature flags + A/B | LaunchDarkly | Local SDK eval; SSE updates |
 | OSS feature-flag platform | Unleash | Self-hosted; polling SDKs + Edge proxy |
+| Self-host LLM at production throughput | vLLM | PagedAttention + continuous batching |
+| Framework-agnostic ML serving | BentoML | Bento package + adaptive batching |
+| Drop-in OIDC / OAuth2 / SAML for any app | Auth0 | Universal Login + Actions + Organizations |
+| Enterprise workforce SSO + lifecycle mgmt | Okta | SAML + SCIM + adaptive MFA |
+| Programmable SMS / voice / WhatsApp / Verify | Twilio | Global carrier fabric behind REST API |
+| Transactional email at scale | SendGrid | Dynamic Templates + Event Webhook |
+| AWS-native multi-region DNS routing | Route 53 | Anycast + latency / geo / failover policies |
+| Service discovery + KV + mesh on VMs | Consul | Raft cluster + agent gossip + Connect (Envoy) |
+| Hosted search with InstantSearch UI | Algolia | Faceted search; DSN; A/B + Recommend |
+| Open-source typo-tolerant search engine | Typesense | Single-binary C++; vector + lexical |
 
 <Callout type="info">
 Built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org), deployed automatically to GitHub Pages on every push to `main`.
