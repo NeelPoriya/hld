@@ -1,0 +1,9 @@
+{
+  "title": "Key-Value Stores",
+  "pages": [
+    "dynamodb",
+    "etcd",
+    "memcached",
+    "redis"
+  ]
+}

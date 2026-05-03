@@ -2,7 +2,7 @@
 
 A revision-friendly knowledge base of the technologies that come up most often in **High Level Design (HLD) / System Design interviews**.
 
-📖 **Read the docs site:** **<https://neelporiya.github.io/hld/>** _(rich nav, instant search, dark mode)_
+🌐 **Live site:** **<https://neelporiya.github.io/hld/>** _(rich nav, instant search, dark mode, GitHub-style)_
 
 Each technology is documented in a consistent format so you can quickly compare options and recall trade-offs under interview pressure.
 
@@ -31,27 +31,29 @@ Every technology page follows the [TEMPLATE](TEMPLATE.md):
 
 ## Index by Category
 
+All docs live under [content/docs/](content/docs/).
+
 ### 1. Relational Databases (RDBMS / SQL)
-- [PostgreSQL](docs/01-relational-databases/postgresql.md)
-- [MySQL](docs/01-relational-databases/mysql.md)
-- [Amazon Aurora](docs/01-relational-databases/aurora.md)
-- [Google Cloud Spanner](docs/01-relational-databases/spanner.md)
-- [CockroachDB](docs/01-relational-databases/cockroachdb.md)
+- [PostgreSQL](content/docs/01-relational-databases/postgresql.md)
+- [MySQL](content/docs/01-relational-databases/mysql.md)
+- [Amazon Aurora](content/docs/01-relational-databases/aurora.md)
+- [Google Cloud Spanner](content/docs/01-relational-databases/spanner.md)
+- [CockroachDB](content/docs/01-relational-databases/cockroachdb.md)
 
 ### 2. NoSQL — Key-Value Stores
-- [Redis](docs/02-key-value-stores/redis.md)
-- [Amazon DynamoDB](docs/02-key-value-stores/dynamodb.md)
-- [Memcached](docs/02-key-value-stores/memcached.md)
-- [etcd](docs/02-key-value-stores/etcd.md)
+- [Redis](content/docs/02-key-value-stores/redis.md)
+- [Amazon DynamoDB](content/docs/02-key-value-stores/dynamodb.md)
+- [Memcached](content/docs/02-key-value-stores/memcached.md)
+- [etcd](content/docs/02-key-value-stores/etcd.md)
 
 ### 3. NoSQL — Wide-Column Stores
-- [Apache Cassandra](docs/03-wide-column-stores/cassandra.md)
-- [Apache HBase](docs/03-wide-column-stores/hbase.md)
-- [Google Bigtable](docs/03-wide-column-stores/bigtable.md)
-- [ScyllaDB](docs/03-wide-column-stores/scylladb.md)
+- [Apache Cassandra](content/docs/03-wide-column-stores/cassandra.md)
+- [Apache HBase](content/docs/03-wide-column-stores/hbase.md)
+- [Google Bigtable](content/docs/03-wide-column-stores/bigtable.md)
+- [ScyllaDB](content/docs/03-wide-column-stores/scylladb.md)
 
 ### 4. NoSQL — Document Stores
-- [MongoDB](docs/04-document-stores/mongodb.md)
+- [MongoDB](content/docs/04-document-stores/mongodb.md)
 - Couchbase *(coming soon)*
 
 ### 5. NoSQL — Graph Databases
@@ -59,70 +61,37 @@ Every technology page follows the [TEMPLATE](TEMPLATE.md):
 - Amazon Neptune *(coming soon)*
 
 ### 6. Search & Indexing
-- [ElasticSearch](docs/06-search-and-indexing/elasticsearch.md)
+- [ElasticSearch](content/docs/06-search-and-indexing/elasticsearch.md)
 - Apache Solr *(coming soon)*
 - OpenSearch *(coming soon)*
 
-### 7. Time-Series Databases
-- InfluxDB *(coming soon)*
-- TimescaleDB *(coming soon)*
-- Prometheus *(coming soon)*
-
-### 8. Vector Databases (AI/ML)
-- Pinecone *(coming soon)*
-- Milvus *(coming soon)*
-- Weaviate *(coming soon)*
+### 7. Time-Series Databases — *coming soon*
+### 8. Vector Databases (AI/ML) — *coming soon*
 
 ### 9. Message Queues & Streaming Platforms
-- [Apache Kafka](docs/09-message-queues-and-streaming/kafka.md)
-- RabbitMQ *(coming soon)*
-- Apache Pulsar *(coming soon)*
-- Amazon SQS / SNS *(coming soon)*
-- Amazon Kinesis *(coming soon)*
+- [Apache Kafka](content/docs/09-message-queues-and-streaming/kafka.md)
+- RabbitMQ, Pulsar, SQS/SNS, Kinesis *(coming soon)*
 
 ### 10. Stream / Real-Time Processing
-- [Apache Flink](docs/10-stream-processing/flink.md)
-- Kafka Streams *(coming soon)*
-- Spark Streaming *(coming soon)*
+- [Apache Flink](content/docs/10-stream-processing/flink.md)
+- Kafka Streams, Spark Streaming *(coming soon)*
 
 ### 11. Batch / Big Data Processing
-- [Apache Hadoop](docs/11-batch-big-data/hadoop.md)
-- [Apache Spark](docs/11-batch-big-data/spark.md)
-- Apache Hive *(coming soon)*
-- Presto / Trino *(coming soon)*
+- [Apache Hadoop](content/docs/11-batch-big-data/hadoop.md)
+- [Apache Spark](content/docs/11-batch-big-data/spark.md)
+- Hive, Presto / Trino *(coming soon)*
 
 ### 12. Data Warehousing & OLAP
-- [Snowflake](docs/12-data-warehousing/snowflake.md)
-- Amazon Redshift *(coming soon)*
-- Google BigQuery *(coming soon)*
-- ClickHouse *(coming soon)*
-- Apache Druid *(coming soon)*
+- [Snowflake](content/docs/12-data-warehousing/snowflake.md)
+- Redshift, BigQuery, ClickHouse, Druid *(coming soon)*
 
-### 13. Data Lake & Lakehouse
-- Apache Iceberg *(coming soon)*
-- Delta Lake *(coming soon)*
-- Apache Hudi *(coming soon)*
+### 13. Data Lake & Lakehouse — *coming soon*
 
 ### 14. Workflow Orchestration & Coordination
-- [Apache Zookeeper](docs/14-workflow-orchestration-and-coordination/zookeeper.md)
-- Apache Airflow *(coming soon)*
-- Temporal *(coming soon)*
+- [Apache Zookeeper](content/docs/14-workflow-orchestration-and-coordination/zookeeper.md)
+- Airflow, Temporal *(coming soon)*
 
-### 15. Caching & CDN
-- Redis (cache mode) — see [Redis](docs/02-key-value-stores/redis.md)
-- Memcached — see [Memcached](docs/02-key-value-stores/memcached.md)
-- Cloudflare / CloudFront / Akamai *(coming soon)*
-
-### 16-22. Infrastructure (load balancers, proxies, gateways, service mesh, K8s, storage)
-- *(coming soon)*
-
-### 23-25. Observability (Metrics, Logs, Traces)
-- Prometheus / Grafana *(coming soon)*
-- ELK Stack *(coming soon)*
-- Jaeger / OpenTelemetry *(coming soon)*
-
-### 26-30. Application-layer (CI/CD, Auth, Realtime, RPC, Feature flags)
-- *(coming soon)*
+### 15-30. *(more categories coming soon — caching, infra, observability, app-layer)*
 
 ---
 
@@ -163,17 +132,26 @@ Every technology page follows the [TEMPLATE](TEMPLATE.md):
 
 ## Local Development
 
-This site is built with [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and deployed automatically to GitHub Pages on every push to `main`.
+The site is a [Fumadocs](https://fumadocs.dev) + [Next.js 16](https://nextjs.org) static export, deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`.
 
 ```powershell
-# install dependencies (one-time)
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+# install deps (one-time)
+npm install
 
-# live preview at http://127.0.0.1:8000
-mkdocs serve
+# live preview at http://localhost:3000
+npm run dev
 
-# static build to ./site/
-mkdocs build --strict
+# static build to ./out/
+npm run build
+```
+
+### Project structure
+
+```
+content/docs/        ← markdown source (the docs themselves)
+app/                 ← Next.js app router pages (home, /docs route)
+components/          ← shared MDX/React components
+lib/                 ← Fumadocs source/loader config
+scripts/             ← migration / maintenance scripts
+.github/workflows/   ← GitHub Actions deployment
 ```

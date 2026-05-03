@@ -1,0 +1,9 @@
+{
+  "title": "Wide-Column Stores",
+  "pages": [
+    "bigtable",
+    "cassandra",
+    "hbase",
+    "scylladb"
+  ]
+}
