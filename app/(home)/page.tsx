@@ -24,11 +24,11 @@ const categories = [
   { name: 'Search & Indexing', techs: 'ElasticSearch, Solr, OpenSearch', href: '/docs/06-search-and-indexing/elasticsearch' },
   { name: 'Time-Series', techs: 'InfluxDB, TimescaleDB, Prometheus', href: '/docs/07-time-series-databases/prometheus' },
   { name: 'Vector Databases', techs: 'Pinecone, Milvus, Weaviate', href: '/docs/08-vector-databases/pinecone' },
-  { name: 'Streaming & Queues', techs: 'Kafka', href: '/docs/09-message-queues-and-streaming/kafka' },
-  { name: 'Stream Processing', techs: 'Flink', href: '/docs/10-stream-processing/flink' },
-  { name: 'Batch & Big Data', techs: 'Hadoop, Spark', href: '/docs/11-batch-big-data/spark' },
-  { name: 'Data Warehousing', techs: 'Snowflake', href: '/docs/12-data-warehousing/snowflake' },
-  { name: 'Coordination', techs: 'Zookeeper', href: '/docs/14-workflow-orchestration-and-coordination/zookeeper' },
+  { name: 'Streaming & Queues', techs: 'Kafka, RabbitMQ, Pulsar, SQS, Kinesis', href: '/docs/09-message-queues-and-streaming/kafka' },
+  { name: 'Stream Processing', techs: 'Flink, Kafka Streams, Spark Streaming', href: '/docs/10-stream-processing/flink' },
+  { name: 'Batch & Big Data', techs: 'Hadoop, Spark, Hive, Trino', href: '/docs/11-batch-big-data/spark' },
+  { name: 'Data Warehousing', techs: 'Snowflake, Redshift, BigQuery, ClickHouse, Druid', href: '/docs/12-data-warehousing/snowflake' },
+  { name: 'Coordination & Orchestration', techs: 'Zookeeper, Airflow, Temporal', href: '/docs/14-workflow-orchestration-and-coordination/zookeeper' },
 ];
 
 export default function HomePage() {
@@ -43,7 +43,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          32 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          44 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

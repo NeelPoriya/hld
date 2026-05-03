@@ -2,6 +2,8 @@
   "title": "Batch & Big Data",
   "pages": [
     "hadoop",
-    "spark"
+    "spark",
+    "hive",
+    "trino"
   ]
 }

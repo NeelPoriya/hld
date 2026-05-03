@@ -1,6 +1,8 @@
 {
   "title": "Coordination & Orchestration",
   "pages": [
-    "zookeeper"
+    "zookeeper",
+    "airflow",
+    "temporal"
   ]
 }

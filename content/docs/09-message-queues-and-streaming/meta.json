@@ -1,6 +1,10 @@
 {
   "title": "Message Queues & Streaming",
   "pages": [
-    "kafka"
+    "kafka",
+    "rabbitmq",
+    "pulsar",
+    "sqs",
+    "kinesis"
   ]
 }

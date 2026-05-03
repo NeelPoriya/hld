@@ -1,6 +1,10 @@
 {
   "title": "Data Warehousing",
   "pages": [
-    "snowflake"
+    "snowflake",
+    "redshift",
+    "bigquery",
+    "clickhouse",
+    "druid"
   ]
 }

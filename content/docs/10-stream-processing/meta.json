@@ -1,6 +1,8 @@
 {
   "title": "Stream Processing",
   "pages": [
-    "flink"
+    "flink",
+    "kafka-streams",
+    "spark-streaming"
   ]
 }

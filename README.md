@@ -77,26 +77,35 @@ All docs live under [content/docs/](content/docs/).
 
 ### 9. Message Queues & Streaming Platforms
 - [Apache Kafka](content/docs/09-message-queues-and-streaming/kafka.md)
-- RabbitMQ, Pulsar, SQS/SNS, Kinesis *(coming soon)*
+- [RabbitMQ](content/docs/09-message-queues-and-streaming/rabbitmq.md)
+- [Apache Pulsar](content/docs/09-message-queues-and-streaming/pulsar.md)
+- [Amazon SQS](content/docs/09-message-queues-and-streaming/sqs.md)
+- [Amazon Kinesis](content/docs/09-message-queues-and-streaming/kinesis.md)
 
 ### 10. Stream / Real-Time Processing
 - [Apache Flink](content/docs/10-stream-processing/flink.md)
-- Kafka Streams, Spark Streaming *(coming soon)*
+- [Kafka Streams](content/docs/10-stream-processing/kafka-streams.md)
+- [Spark Structured Streaming](content/docs/10-stream-processing/spark-streaming.md)
 
 ### 11. Batch / Big Data Processing
 - [Apache Hadoop](content/docs/11-batch-big-data/hadoop.md)
 - [Apache Spark](content/docs/11-batch-big-data/spark.md)
-- Hive, Presto / Trino *(coming soon)*
+- [Apache Hive](content/docs/11-batch-big-data/hive.md)
+- [Trino (and Presto)](content/docs/11-batch-big-data/trino.md)
 
 ### 12. Data Warehousing & OLAP
 - [Snowflake](content/docs/12-data-warehousing/snowflake.md)
-- Redshift, BigQuery, ClickHouse, Druid *(coming soon)*
+- [Amazon Redshift](content/docs/12-data-warehousing/redshift.md)
+- [Google BigQuery](content/docs/12-data-warehousing/bigquery.md)
+- [ClickHouse](content/docs/12-data-warehousing/clickhouse.md)
+- [Apache Druid](content/docs/12-data-warehousing/druid.md)
 
 ### 13. Data Lake & Lakehouse — *coming soon*
 
 ### 14. Workflow Orchestration & Coordination
 - [Apache Zookeeper](content/docs/14-workflow-orchestration-and-coordination/zookeeper.md)
-- Airflow, Temporal *(coming soon)*
+- [Apache Airflow](content/docs/14-workflow-orchestration-and-coordination/airflow.md)
+- [Temporal](content/docs/14-workflow-orchestration-and-coordination/temporal.md)
 
 ### 15-30. *(more categories coming soon — caching, infra, observability, app-layer)*
 
@@ -122,6 +131,10 @@ All docs live under [content/docs/](content/docs/).
 | App / infra metrics on Kubernetes | Prometheus | Pull-based scraping, PromQL, K8s-native |
 | Mixed time-series + relational workload | TimescaleDB | Postgres + auto-partitioning + compression |
 | RAG / semantic search over embeddings | Pinecone / Milvus / Weaviate | Vector similarity at scale |
+| Sub-second OLAP / real-time analytics | ClickHouse / Druid | Columnar engines tuned for low-latency aggregations |
+| Federated SQL across data lakes & DBs | Trino / Presto | Many connectors, one SQL gateway |
+| Long-running business workflows | Temporal | Durable execution as plain code |
+| Scheduled batch ETL pipelines | Airflow | Python DAGs + huge operator ecosystem |
 
 ---
 
