@@ -36,6 +36,11 @@ const categories = [
   { name: 'API Gateways', techs: 'Kong, AWS API Gateway', href: '/docs/18-api-gateways/kong' },
   { name: 'Container Orchestration', techs: 'Kubernetes', href: '/docs/19-container-orchestration/kubernetes' },
   { name: 'Observability', techs: 'Grafana, OpenTelemetry, Jaeger', href: '/docs/20-observability/grafana' },
+  { name: 'Caching', techs: 'Varnish, Caffeine', href: '/docs/21-caching/varnish' },
+  { name: 'Service Mesh', techs: 'Istio, Linkerd', href: '/docs/22-service-mesh/istio' },
+  { name: 'Secrets & Identity', techs: 'Vault, Keycloak', href: '/docs/23-secrets-and-identity/vault' },
+  { name: 'Infrastructure as Code', techs: 'Terraform, Pulumi', href: '/docs/24-iac/terraform' },
+  { name: 'CI/CD', techs: 'GitHub Actions, ArgoCD', href: '/docs/25-cicd/github-actions' },
 ];
 
 export default function HomePage() {
@@ -50,7 +55,7 @@ export default function HomePage() {
           Master the technologies that show up in every <span className="bg-gradient-to-r from-fd-primary to-fd-foreground bg-clip-text text-transparent">HLD interview</span>.
         </h1>
         <p className="max-w-2xl text-lg text-fd-muted-foreground md:text-xl">
-          61 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
+          71 technologies, one consistent template. TL;DR, data model, consistency, replication, sharding, trade-offs, and interview-ready cheat sheets — all in one place.
         </p>
         <ProgressPill />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

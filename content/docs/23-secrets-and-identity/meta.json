@@ -1,0 +1,4 @@
+{
+  "title": "Secrets & Identity",
+  "pages": ["vault", "keycloak"]
+}

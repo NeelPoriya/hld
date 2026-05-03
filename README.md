@@ -136,7 +136,27 @@ All docs live under [content/docs/](content/docs/).
 - [OpenTelemetry](content/docs/20-observability/opentelemetry.md)
 - [Jaeger](content/docs/20-observability/jaeger.md)
 
-### 21-30. *(more categories coming soon — caching layer, secrets/config, service mesh, app-layer)*
+### 21. Caching
+- [Varnish](content/docs/21-caching/varnish.md)
+- [Caffeine](content/docs/21-caching/caffeine.md)
+
+### 22. Service Mesh
+- [Istio](content/docs/22-service-mesh/istio.md)
+- [Linkerd](content/docs/22-service-mesh/linkerd.md)
+
+### 23. Secrets & Identity
+- [HashiCorp Vault](content/docs/23-secrets-and-identity/vault.md)
+- [Keycloak](content/docs/23-secrets-and-identity/keycloak.md)
+
+### 24. Infrastructure as Code
+- [Terraform](content/docs/24-iac/terraform.md)
+- [Pulumi](content/docs/24-iac/pulumi.md)
+
+### 25. CI/CD
+- [GitHub Actions](content/docs/25-cicd/github-actions.md)
+- [Argo CD](content/docs/25-cicd/argocd.md)
+
+### 26-30. *(more categories coming soon — app-layer, runtimes, edge / serverless)*
 
 ---
 
@@ -175,6 +195,14 @@ All docs live under [content/docs/](content/docs/).
 | Dashboards across metrics + logs + traces | Grafana | One pane of glass over Prometheus + Loki + Tempo |
 | Vendor-neutral instrumentation | OpenTelemetry | SDKs + Collector + OTLP for traces / metrics / logs |
 | Self-hosted distributed tracing | Jaeger | OSS span store + UI; OTLP-native |
+| Programmable HTTP cache in front of origin | Varnish | VCL state machine; microcache + ESI |
+| In-process JVM cache (memoize hot rows) | Caffeine | W-TinyLFU eviction beats LRU |
+| Service mesh on Kubernetes | Istio / Linkerd | mTLS + traffic / auth / observability policy |
+| Centralized secrets + dynamic creds | Vault | Identity-aware encryption-as-a-service |
+| Self-hosted SSO / OIDC IdP | Keycloak | Open-source Auth0 alternative |
+| Multi-cloud Infrastructure as Code | Terraform / Pulumi | Declarative HCL or real-language IaC |
+| CI for build/test/release | GitHub Actions | Native to GitHub; YAML workflows |
+| GitOps continuous delivery on Kubernetes | ArgoCD | Reconciles cluster to Git |
 
 ---
 

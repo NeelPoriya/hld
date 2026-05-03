@@ -21,6 +21,11 @@
     "17-cdn-and-edge",
     "18-api-gateways",
     "19-container-orchestration",
-    "20-observability"
+    "20-observability",
+    "21-caching",
+    "22-service-mesh",
+    "23-secrets-and-identity",
+    "24-iac",
+    "25-cicd"
   ]
 }

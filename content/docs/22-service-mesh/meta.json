@@ -1,0 +1,4 @@
+{
+  "title": "Service Mesh",
+  "pages": ["istio", "linkerd"]
+}

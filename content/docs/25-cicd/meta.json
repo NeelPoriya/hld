@@ -1,0 +1,4 @@
+{
+  "title": "CI/CD",
+  "pages": ["github-actions", "argocd"]
+}

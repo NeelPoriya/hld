@@ -214,6 +214,16 @@ export const allDocSlugs: string[] = [
   '20-observability/grafana',
   '20-observability/opentelemetry',
   '20-observability/jaeger',
+  '21-caching/varnish',
+  '21-caching/caffeine',
+  '22-service-mesh/istio',
+  '22-service-mesh/linkerd',
+  '23-secrets-and-identity/vault',
+  '23-secrets-and-identity/keycloak',
+  '24-iac/terraform',
+  '24-iac/pulumi',
+  '25-cicd/github-actions',
+  '25-cicd/argocd',
 ];
 
 /**
